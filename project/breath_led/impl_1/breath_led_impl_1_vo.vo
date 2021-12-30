@@ -1,0 +1,2717 @@
+
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 3.0.0.24.1
+
+// backanno -o breath_led_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui breath_led_impl_1.udb 
+// Netlist created on Tue Dec 28 22:05:21 2021
+// Netlist written on Tue Dec 28 22:05:29 2021
+// Design is for device iCE40UP5K
+// Design is for package SG48
+// Design is for performance grade High-Performance_1.2V
+
+`timescale 1 ns / 1 ps
+
+module top ( yrgb_led, clk_in, rst_n );
+  input  clk_in, rst_n;
+  output [3:0] yrgb_led;
+  wire   \breath_led_u1.n137[17] , \breath_led_u1.n137[16] , 
+         \breath_led_u1.n1564 , \breath_led_u1.n129 , \breath_led_u1.cnt2[16] , 
+         \breath_led_u1.n663 , \breath_led_u1.cnt2[15] , \breath_led_u1.n43 , 
+         \breath_led_u1.rst_n_N_27 , clk_in_c, \breath_led_u1.n665 , 
+         \breath_led_u1.n1501 , \breath_led_u1.cnt1[0] , \yrgb_led_pad[2].vcc , 
+         \breath_led_u1.n105[0] , \breath_led_u1.n623 , \breath_led_u1.n1528 , 
+         \breath_led_u1.cnt1[18] , \breath_led_u1.n639 , 
+         \breath_led_u1.cnt1[17] , \breath_led_u1.n105[17] , 
+         \breath_led_u1.n105[18] , \breath_led_u1.n641 , \breath_led_u1.n1504 , 
+         \breath_led_u1.cnt1[2] , \breath_led_u1.cnt1[1] , 
+         \breath_led_u1.n105[1] , \breath_led_u1.n105[2] , 
+         \breath_led_u1.n625 , \breath_led_u1.n1516 , \breath_led_u1.cnt1[10] , 
+         \breath_led_u1.n631 , \breath_led_u1.cnt1[9] , 
+         \breath_led_u1.n105[9] , \breath_led_u1.n105[10] , 
+         \breath_led_u1.n633 , \breath_led_u1.n1513 , \breath_led_u1.cnt1[8] , 
+         \breath_led_u1.n629 , \breath_led_u1.cnt1[7] , 
+         \breath_led_u1.n105[7] , \breath_led_u1.n105[8] , 
+         \breath_led_u1.n1510 , \breath_led_u1.cnt1[6] , \breath_led_u1.n627 , 
+         \breath_led_u1.cnt1[5] , \breath_led_u1.n105[5] , 
+         \breath_led_u1.n105[6] , \breath_led_u1.n137[25] , 
+         \breath_led_u1.n137[24] , \breath_led_u1.n1576 , 
+         \breath_led_u1.cnt2[24] , \breath_led_u1.n671 , 
+         \breath_led_u1.cnt2[23] , \breath_led_u1.n1525 , 
+         \breath_led_u1.cnt1[16] , \breath_led_u1.n637 , 
+         \breath_led_u1.cnt1[15] , \breath_led_u1.n105[15] , 
+         \breath_led_u1.n105[16] , \breath_led_u1.n1537 , 
+         \breath_led_u1.cnt1[24] , \breath_led_u1.n645 , 
+         \breath_led_u1.cnt1[23] , \breath_led_u1.n105[23] , 
+         \breath_led_u1.n105[24] , \breath_led_u1.n1522 , 
+         \breath_led_u1.cnt1[14] , \breath_led_u1.n635 , 
+         \breath_led_u1.cnt1[13] , \breath_led_u1.n105[13] , 
+         \breath_led_u1.n105[14] , \breath_led_u1.n1519 , 
+         \breath_led_u1.cnt1[12] , \breath_led_u1.cnt1[11] , 
+         \breath_led_u1.n105[11] , \breath_led_u1.n105[12] , 
+         \breath_led_u1.n1534 , \breath_led_u1.cnt1[22] , \breath_led_u1.n643 , 
+         \breath_led_u1.cnt1[21] , \breath_led_u1.n105[21] , 
+         \breath_led_u1.n105[22] , \breath_led_u1.n137[3] , 
+         \breath_led_u1.n137[2] , \breath_led_u1.n1543 , 
+         \breath_led_u1.cnt2[2] , \breath_led_u1.n649 , 
+         \breath_led_u1.cnt2[1] , \breath_led_u1.n651 , 
+         \breath_led_u1.n137[15] , \breath_led_u1.n137[14] , 
+         \breath_led_u1.n1561 , \breath_led_u1.cnt2[14] , \breath_led_u1.n661 , 
+         \breath_led_u1.cnt2[13] , \breath_led_u1.n137[1] , 
+         \breath_led_u1.n1540 , \breath_led_u1.n11 , \breath_led_u1.cnt2[0] , 
+         \breath_led_u1.n137[23] , \breath_led_u1.n137[22] , 
+         \breath_led_u1.n1573 , \breath_led_u1.cnt2[22] , \breath_led_u1.n669 , 
+         \breath_led_u1.cnt2[21] , \breath_led_u1.n137[21] , 
+         \breath_led_u1.n137[20] , \breath_led_u1.n1570 , 
+         \breath_led_u1.cnt2[20] , \breath_led_u1.n667 , 
+         \breath_led_u1.cnt2[19] , \breath_led_u1.n1507 , 
+         \breath_led_u1.cnt1[4] , \breath_led_u1.cnt1[3] , 
+         \breath_led_u1.n105[3] , \breath_led_u1.n105[4] , 
+         \breath_led_u1.n137[13] , \breath_led_u1.n137[12] , 
+         \breath_led_u1.n1558 , \breath_led_u1.cnt2[12] , \breath_led_u1.n659 , 
+         \breath_led_u1.cnt2[11] , \breath_led_u1.n1531 , 
+         \breath_led_u1.cnt1[20] , \breath_led_u1.cnt1[19] , 
+         \breath_led_u1.n105[19] , \breath_led_u1.n105[20] , 
+         \breath_led_u1.n137[11] , \breath_led_u1.n137[10] , 
+         \breath_led_u1.n1555 , \breath_led_u1.cnt2[10] , \breath_led_u1.n657 , 
+         \breath_led_u1.cnt2[9] , \breath_led_u1.n137[9] , 
+         \breath_led_u1.n137[8] , \breath_led_u1.n1552 , 
+         \breath_led_u1.cnt2[8] , \breath_led_u1.n655 , 
+         \breath_led_u1.cnt2[7] , \breath_led_u1.n137[7] , 
+         \breath_led_u1.n137[6] , \breath_led_u1.n1549 , 
+         \breath_led_u1.cnt2[6] , \breath_led_u1.n653 , 
+         \breath_led_u1.cnt2[5] , \breath_led_u1.n137[5] , 
+         \breath_led_u1.n137[4] , \breath_led_u1.n1546 , 
+         \breath_led_u1.cnt2[4] , \breath_led_u1.cnt2[3] , 
+         \breath_led_u1.n137[19] , \breath_led_u1.n137[18] , 
+         \breath_led_u1.n1567 , \breath_led_u1.cnt2[18] , 
+         \breath_led_u1.cnt2[17] , \breath_led_u1.n132[22] , 
+         \breath_led_u1.n132[23] , \breath_led_u1.cnt1_24__N_78 , 
+         \breath_led_u1.n132[20] , \breath_led_u1.n132[21] , 
+         \breath_led_u1.n132[18] , \breath_led_u1.n132[19] , 
+         \breath_led_u1.n132[16] , \breath_led_u1.n132[17] , 
+         \breath_led_u1.n132[14] , \breath_led_u1.n132[15] , 
+         \breath_led_u1.n132[12] , \breath_led_u1.n132[13] , 
+         \breath_led_u1.n132[10] , \breath_led_u1.n132[11] , 
+         \breath_led_u1.n132[8] , \breath_led_u1.n132[9] , 
+         \breath_led_u1.n132[6] , \breath_led_u1.n132[7] , 
+         \breath_led_u1.n132[4] , \breath_led_u1.n132[5] , 
+         \breath_led_u1.n132[2] , \breath_led_u1.n132[3] , 
+         \breath_led_u1.n132[0] , \breath_led_u1.n132[1] , \breath_led_u1.n40 , 
+         \breath_led_u1.n38 , \breath_led_u1.n42 , \breath_led_u1.n44 , 
+         \breath_led_u1.n46 , \breath_led_u1.n48 , yrgb_led_0, 
+         \breath_led_u1.n16 , \breath_led_u1.n22 , \breath_led_u1.n24 , 
+         \breath_led_u1.n20 , \breath_led_u1.n369 , \breath_led_u1.n356 , 
+         \breath_led_u1.n358 , \breath_led_u1.n20_adj_114 , 
+         \breath_led_u1.flag_N_111 , \breath_led_u1.n16_adj_115 , 
+         \breath_led_u1.n20_adj_117 , \breath_led_u1.n22_adj_116 , 
+         \breath_led_u1.n24_adj_118 , \breath_led_u1.n353 , 
+         \breath_led_u1.n32 , \breath_led_u1.n1082 , \breath_led_u1.n1000 , 
+         \breath_led_u1.n996 , \breath_led_u1.n20_adj_123 , \breath_led_u1.n4 , 
+         \breath_led_u1.n6 , \breath_led_u1.n8 , \breath_led_u1.n10 , 
+         \breath_led_u1.n12 , \breath_led_u1.n14 , \breath_led_u1.n16_adj_144 , 
+         \breath_led_u1.n18 , \breath_led_u1.n20_adj_145 , 
+         \breath_led_u1.n22_adj_146 , \breath_led_u1.n24_adj_147 , 
+         \breath_led_u1.n26 , \breath_led_u1.n28 , \breath_led_u1.n30 , 
+         \breath_led_u1.n32_adj_148 , \breath_led_u1.n34 , \breath_led_u1.n36 , 
+         \breath_led_u1.n5 , \breath_led_u1.n999 , 
+         \breath_led_u1.cnt2_24__N_104 , rst_n_c, \breath_led_u1.n14_adj_149 , 
+         \breath_led_u1.n13 , \breath_led_u1.n846 , \breath_led_u1.n132[24] , 
+         yrgb_led_c, \breath_led_u1.flag , \breath_led_u1.n286 ;
+
+  breath_led_u1_SLICE_0 \breath_led_u1.SLICE_0 ( 
+    .DI1(\breath_led_u1.n137[17] ), .DI0(\breath_led_u1.n137[16] ), 
+    .D1(\breath_led_u1.n1564 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[16] ), .D0(\breath_led_u1.n663 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[15] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n663 ), .CIN1(\breath_led_u1.n1564 ), 
+    .Q0(\breath_led_u1.cnt2[15] ), .Q1(\breath_led_u1.cnt2[16] ), 
+    .F0(\breath_led_u1.n137[16] ), .F1(\breath_led_u1.n137[17] ), 
+    .COUT1(\breath_led_u1.n665 ), .COUT0(\breath_led_u1.n1564 ));
+  breath_led_u1_SLICE_1 \breath_led_u1.SLICE_1 ( .D1(\breath_led_u1.n1501 ), 
+    .C1(\breath_led_u1.cnt1[0] ), .B1(\yrgb_led_pad[2].vcc ), 
+    .CIN1(\breath_led_u1.n1501 ), .F1(\breath_led_u1.n105[0] ), 
+    .COUT1(\breath_led_u1.n623 ), .COUT0(\breath_led_u1.n1501 ));
+  breath_led_u1_SLICE_2 \breath_led_u1.SLICE_2 ( .D1(\breath_led_u1.n1528 ), 
+    .C1(\breath_led_u1.cnt1[18] ), .D0(\breath_led_u1.n639 ), 
+    .C0(\breath_led_u1.cnt1[17] ), .CIN0(\breath_led_u1.n639 ), 
+    .CIN1(\breath_led_u1.n1528 ), .F0(\breath_led_u1.n105[17] ), 
+    .F1(\breath_led_u1.n105[18] ), .COUT1(\breath_led_u1.n641 ), 
+    .COUT0(\breath_led_u1.n1528 ));
+  breath_led_u1_SLICE_3 \breath_led_u1.SLICE_3 ( .D1(\breath_led_u1.n1504 ), 
+    .C1(\breath_led_u1.cnt1[2] ), .D0(\breath_led_u1.n623 ), 
+    .C0(\breath_led_u1.cnt1[1] ), .CIN0(\breath_led_u1.n623 ), 
+    .CIN1(\breath_led_u1.n1504 ), .F0(\breath_led_u1.n105[1] ), 
+    .F1(\breath_led_u1.n105[2] ), .COUT1(\breath_led_u1.n625 ), 
+    .COUT0(\breath_led_u1.n1504 ));
+  breath_led_u1_SLICE_4 \breath_led_u1.SLICE_4 ( .D1(\breath_led_u1.n1516 ), 
+    .C1(\breath_led_u1.cnt1[10] ), .D0(\breath_led_u1.n631 ), 
+    .C0(\breath_led_u1.cnt1[9] ), .CIN0(\breath_led_u1.n631 ), 
+    .CIN1(\breath_led_u1.n1516 ), .F0(\breath_led_u1.n105[9] ), 
+    .F1(\breath_led_u1.n105[10] ), .COUT1(\breath_led_u1.n633 ), 
+    .COUT0(\breath_led_u1.n1516 ));
+  breath_led_u1_SLICE_5 \breath_led_u1.SLICE_5 ( .D1(\breath_led_u1.n1513 ), 
+    .C1(\breath_led_u1.cnt1[8] ), .D0(\breath_led_u1.n629 ), 
+    .C0(\breath_led_u1.cnt1[7] ), .CIN0(\breath_led_u1.n629 ), 
+    .CIN1(\breath_led_u1.n1513 ), .F0(\breath_led_u1.n105[7] ), 
+    .F1(\breath_led_u1.n105[8] ), .COUT1(\breath_led_u1.n631 ), 
+    .COUT0(\breath_led_u1.n1513 ));
+  breath_led_u1_SLICE_6 \breath_led_u1.SLICE_6 ( .D1(\breath_led_u1.n1510 ), 
+    .C1(\breath_led_u1.cnt1[6] ), .D0(\breath_led_u1.n627 ), 
+    .C0(\breath_led_u1.cnt1[5] ), .CIN0(\breath_led_u1.n627 ), 
+    .CIN1(\breath_led_u1.n1510 ), .F0(\breath_led_u1.n105[5] ), 
+    .F1(\breath_led_u1.n105[6] ), .COUT1(\breath_led_u1.n629 ), 
+    .COUT0(\breath_led_u1.n1510 ));
+  breath_led_u1_SLICE_7 \breath_led_u1.SLICE_7 ( 
+    .DI1(\breath_led_u1.n137[25] ), .DI0(\breath_led_u1.n137[24] ), 
+    .D1(\breath_led_u1.n1576 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[24] ), .D0(\breath_led_u1.n671 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[23] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n671 ), .CIN1(\breath_led_u1.n1576 ), 
+    .Q0(\breath_led_u1.cnt2[23] ), .Q1(\breath_led_u1.cnt2[24] ), 
+    .F0(\breath_led_u1.n137[24] ), .F1(\breath_led_u1.n137[25] ), 
+    .COUT0(\breath_led_u1.n1576 ));
+  breath_led_u1_SLICE_8 \breath_led_u1.SLICE_8 ( .D1(\breath_led_u1.n1525 ), 
+    .C1(\breath_led_u1.cnt1[16] ), .D0(\breath_led_u1.n637 ), 
+    .C0(\breath_led_u1.cnt1[15] ), .CIN0(\breath_led_u1.n637 ), 
+    .CIN1(\breath_led_u1.n1525 ), .F0(\breath_led_u1.n105[15] ), 
+    .F1(\breath_led_u1.n105[16] ), .COUT1(\breath_led_u1.n639 ), 
+    .COUT0(\breath_led_u1.n1525 ));
+  breath_led_u1_SLICE_9 \breath_led_u1.SLICE_9 ( .D1(\breath_led_u1.n1537 ), 
+    .C1(\breath_led_u1.cnt1[24] ), .D0(\breath_led_u1.n645 ), 
+    .C0(\breath_led_u1.cnt1[23] ), .CIN0(\breath_led_u1.n645 ), 
+    .CIN1(\breath_led_u1.n1537 ), .F0(\breath_led_u1.n105[23] ), 
+    .F1(\breath_led_u1.n105[24] ), .COUT0(\breath_led_u1.n1537 ));
+  breath_led_u1_SLICE_10 \breath_led_u1.SLICE_10 ( .D1(\breath_led_u1.n1522 ), 
+    .C1(\breath_led_u1.cnt1[14] ), .D0(\breath_led_u1.n635 ), 
+    .C0(\breath_led_u1.cnt1[13] ), .CIN0(\breath_led_u1.n635 ), 
+    .CIN1(\breath_led_u1.n1522 ), .F0(\breath_led_u1.n105[13] ), 
+    .F1(\breath_led_u1.n105[14] ), .COUT1(\breath_led_u1.n637 ), 
+    .COUT0(\breath_led_u1.n1522 ));
+  breath_led_u1_SLICE_11 \breath_led_u1.SLICE_11 ( .D1(\breath_led_u1.n1519 ), 
+    .C1(\breath_led_u1.cnt1[12] ), .D0(\breath_led_u1.n633 ), 
+    .C0(\breath_led_u1.cnt1[11] ), .CIN0(\breath_led_u1.n633 ), 
+    .CIN1(\breath_led_u1.n1519 ), .F0(\breath_led_u1.n105[11] ), 
+    .F1(\breath_led_u1.n105[12] ), .COUT1(\breath_led_u1.n635 ), 
+    .COUT0(\breath_led_u1.n1519 ));
+  breath_led_u1_SLICE_12 \breath_led_u1.SLICE_12 ( .D1(\breath_led_u1.n1534 ), 
+    .C1(\breath_led_u1.cnt1[22] ), .D0(\breath_led_u1.n643 ), 
+    .C0(\breath_led_u1.cnt1[21] ), .CIN0(\breath_led_u1.n643 ), 
+    .CIN1(\breath_led_u1.n1534 ), .F0(\breath_led_u1.n105[21] ), 
+    .F1(\breath_led_u1.n105[22] ), .COUT1(\breath_led_u1.n645 ), 
+    .COUT0(\breath_led_u1.n1534 ));
+  breath_led_u1_SLICE_13 \breath_led_u1.SLICE_13 ( 
+    .DI1(\breath_led_u1.n137[3] ), .DI0(\breath_led_u1.n137[2] ), 
+    .D1(\breath_led_u1.n1543 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[2] ), .D0(\breath_led_u1.n649 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[1] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n649 ), .CIN1(\breath_led_u1.n1543 ), 
+    .Q0(\breath_led_u1.cnt2[1] ), .Q1(\breath_led_u1.cnt2[2] ), 
+    .F0(\breath_led_u1.n137[2] ), .F1(\breath_led_u1.n137[3] ), 
+    .COUT1(\breath_led_u1.n651 ), .COUT0(\breath_led_u1.n1543 ));
+  breath_led_u1_SLICE_14 \breath_led_u1.SLICE_14 ( 
+    .DI1(\breath_led_u1.n137[15] ), .DI0(\breath_led_u1.n137[14] ), 
+    .D1(\breath_led_u1.n1561 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[14] ), .D0(\breath_led_u1.n661 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[13] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n661 ), .CIN1(\breath_led_u1.n1561 ), 
+    .Q0(\breath_led_u1.cnt2[13] ), .Q1(\breath_led_u1.cnt2[14] ), 
+    .F0(\breath_led_u1.n137[14] ), .F1(\breath_led_u1.n137[15] ), 
+    .COUT1(\breath_led_u1.n663 ), .COUT0(\breath_led_u1.n1561 ));
+  breath_led_u1_SLICE_15 \breath_led_u1.SLICE_15 ( 
+    .DI1(\breath_led_u1.n137[1] ), .D1(\breath_led_u1.n1540 ), 
+    .C1(\breath_led_u1.n11 ), .B1(\breath_led_u1.cnt2[0] ), 
+    .B0(\breath_led_u1.n129 ), .CE(\breath_led_u1.n43 ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN1(\breath_led_u1.n1540 ), .Q1(\breath_led_u1.cnt2[0] ), 
+    .F1(\breath_led_u1.n137[1] ), .COUT1(\breath_led_u1.n649 ), 
+    .COUT0(\breath_led_u1.n1540 ));
+  breath_led_u1_SLICE_16 \breath_led_u1.SLICE_16 ( 
+    .DI1(\breath_led_u1.n137[23] ), .DI0(\breath_led_u1.n137[22] ), 
+    .D1(\breath_led_u1.n1573 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[22] ), .D0(\breath_led_u1.n669 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[21] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n669 ), .CIN1(\breath_led_u1.n1573 ), 
+    .Q0(\breath_led_u1.cnt2[21] ), .Q1(\breath_led_u1.cnt2[22] ), 
+    .F0(\breath_led_u1.n137[22] ), .F1(\breath_led_u1.n137[23] ), 
+    .COUT1(\breath_led_u1.n671 ), .COUT0(\breath_led_u1.n1573 ));
+  breath_led_u1_SLICE_17 \breath_led_u1.SLICE_17 ( 
+    .DI1(\breath_led_u1.n137[21] ), .DI0(\breath_led_u1.n137[20] ), 
+    .D1(\breath_led_u1.n1570 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[20] ), .D0(\breath_led_u1.n667 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[19] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n667 ), .CIN1(\breath_led_u1.n1570 ), 
+    .Q0(\breath_led_u1.cnt2[19] ), .Q1(\breath_led_u1.cnt2[20] ), 
+    .F0(\breath_led_u1.n137[20] ), .F1(\breath_led_u1.n137[21] ), 
+    .COUT1(\breath_led_u1.n669 ), .COUT0(\breath_led_u1.n1570 ));
+  breath_led_u1_SLICE_18 \breath_led_u1.SLICE_18 ( .D1(\breath_led_u1.n1507 ), 
+    .C1(\breath_led_u1.cnt1[4] ), .D0(\breath_led_u1.n625 ), 
+    .C0(\breath_led_u1.cnt1[3] ), .CIN0(\breath_led_u1.n625 ), 
+    .CIN1(\breath_led_u1.n1507 ), .F0(\breath_led_u1.n105[3] ), 
+    .F1(\breath_led_u1.n105[4] ), .COUT1(\breath_led_u1.n627 ), 
+    .COUT0(\breath_led_u1.n1507 ));
+  breath_led_u1_SLICE_19 \breath_led_u1.SLICE_19 ( 
+    .DI1(\breath_led_u1.n137[13] ), .DI0(\breath_led_u1.n137[12] ), 
+    .D1(\breath_led_u1.n1558 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[12] ), .D0(\breath_led_u1.n659 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[11] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n659 ), .CIN1(\breath_led_u1.n1558 ), 
+    .Q0(\breath_led_u1.cnt2[11] ), .Q1(\breath_led_u1.cnt2[12] ), 
+    .F0(\breath_led_u1.n137[12] ), .F1(\breath_led_u1.n137[13] ), 
+    .COUT1(\breath_led_u1.n661 ), .COUT0(\breath_led_u1.n1558 ));
+  breath_led_u1_SLICE_20 \breath_led_u1.SLICE_20 ( .D1(\breath_led_u1.n1531 ), 
+    .C1(\breath_led_u1.cnt1[20] ), .D0(\breath_led_u1.n641 ), 
+    .C0(\breath_led_u1.cnt1[19] ), .CIN0(\breath_led_u1.n641 ), 
+    .CIN1(\breath_led_u1.n1531 ), .F0(\breath_led_u1.n105[19] ), 
+    .F1(\breath_led_u1.n105[20] ), .COUT1(\breath_led_u1.n643 ), 
+    .COUT0(\breath_led_u1.n1531 ));
+  breath_led_u1_SLICE_21 \breath_led_u1.SLICE_21 ( 
+    .DI1(\breath_led_u1.n137[11] ), .DI0(\breath_led_u1.n137[10] ), 
+    .D1(\breath_led_u1.n1555 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[10] ), .D0(\breath_led_u1.n657 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[9] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n657 ), .CIN1(\breath_led_u1.n1555 ), 
+    .Q0(\breath_led_u1.cnt2[9] ), .Q1(\breath_led_u1.cnt2[10] ), 
+    .F0(\breath_led_u1.n137[10] ), .F1(\breath_led_u1.n137[11] ), 
+    .COUT1(\breath_led_u1.n659 ), .COUT0(\breath_led_u1.n1555 ));
+  breath_led_u1_SLICE_22 \breath_led_u1.SLICE_22 ( 
+    .DI1(\breath_led_u1.n137[9] ), .DI0(\breath_led_u1.n137[8] ), 
+    .D1(\breath_led_u1.n1552 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[8] ), .D0(\breath_led_u1.n655 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[7] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n655 ), .CIN1(\breath_led_u1.n1552 ), 
+    .Q0(\breath_led_u1.cnt2[7] ), .Q1(\breath_led_u1.cnt2[8] ), 
+    .F0(\breath_led_u1.n137[8] ), .F1(\breath_led_u1.n137[9] ), 
+    .COUT1(\breath_led_u1.n657 ), .COUT0(\breath_led_u1.n1552 ));
+  breath_led_u1_SLICE_23 \breath_led_u1.SLICE_23 ( 
+    .DI1(\breath_led_u1.n137[7] ), .DI0(\breath_led_u1.n137[6] ), 
+    .D1(\breath_led_u1.n1549 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[6] ), .D0(\breath_led_u1.n653 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[5] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n653 ), .CIN1(\breath_led_u1.n1549 ), 
+    .Q0(\breath_led_u1.cnt2[5] ), .Q1(\breath_led_u1.cnt2[6] ), 
+    .F0(\breath_led_u1.n137[6] ), .F1(\breath_led_u1.n137[7] ), 
+    .COUT1(\breath_led_u1.n655 ), .COUT0(\breath_led_u1.n1549 ));
+  breath_led_u1_SLICE_24 \breath_led_u1.SLICE_24 ( 
+    .DI1(\breath_led_u1.n137[5] ), .DI0(\breath_led_u1.n137[4] ), 
+    .D1(\breath_led_u1.n1546 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[4] ), .D0(\breath_led_u1.n651 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[3] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n651 ), .CIN1(\breath_led_u1.n1546 ), 
+    .Q0(\breath_led_u1.cnt2[3] ), .Q1(\breath_led_u1.cnt2[4] ), 
+    .F0(\breath_led_u1.n137[4] ), .F1(\breath_led_u1.n137[5] ), 
+    .COUT1(\breath_led_u1.n653 ), .COUT0(\breath_led_u1.n1546 ));
+  breath_led_u1_SLICE_25 \breath_led_u1.SLICE_25 ( 
+    .DI1(\breath_led_u1.n137[19] ), .DI0(\breath_led_u1.n137[18] ), 
+    .D1(\breath_led_u1.n1567 ), .C1(\breath_led_u1.n129 ), 
+    .B1(\breath_led_u1.cnt2[18] ), .D0(\breath_led_u1.n665 ), 
+    .C0(\breath_led_u1.n129 ), .B0(\breath_led_u1.cnt2[17] ), 
+    .CE(\breath_led_u1.n43 ), .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .CIN0(\breath_led_u1.n665 ), .CIN1(\breath_led_u1.n1567 ), 
+    .Q0(\breath_led_u1.cnt2[17] ), .Q1(\breath_led_u1.cnt2[18] ), 
+    .F0(\breath_led_u1.n137[18] ), .F1(\breath_led_u1.n137[19] ), 
+    .COUT1(\breath_led_u1.n667 ), .COUT0(\breath_led_u1.n1567 ));
+  breath_led_u1_SLICE_27 \breath_led_u1.SLICE_27 ( 
+    .DI1(\breath_led_u1.n132[22] ), .DI0(\breath_led_u1.n132[23] ), 
+    .C1(\breath_led_u1.cnt1_24__N_78 ), .B1(\breath_led_u1.n105[22] ), 
+    .B0(\breath_led_u1.cnt1_24__N_78 ), .A0(\breath_led_u1.n105[23] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[23] ), .Q1(\breath_led_u1.cnt1[22] ), 
+    .F0(\breath_led_u1.n132[23] ), .F1(\breath_led_u1.n132[22] ));
+  breath_led_u1_SLICE_29 \breath_led_u1.SLICE_29 ( 
+    .DI1(\breath_led_u1.n132[20] ), .DI0(\breath_led_u1.n132[21] ), 
+    .C1(\breath_led_u1.cnt1_24__N_78 ), .B1(\breath_led_u1.n105[20] ), 
+    .D0(\breath_led_u1.n105[21] ), .B0(\breath_led_u1.cnt1_24__N_78 ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[21] ), .Q1(\breath_led_u1.cnt1[20] ), 
+    .F0(\breath_led_u1.n132[21] ), .F1(\breath_led_u1.n132[20] ));
+  breath_led_u1_SLICE_31 \breath_led_u1.SLICE_31 ( 
+    .DI1(\breath_led_u1.n132[18] ), .DI0(\breath_led_u1.n132[19] ), 
+    .C1(\breath_led_u1.cnt1_24__N_78 ), .A1(\breath_led_u1.n105[18] ), 
+    .D0(\breath_led_u1.cnt1_24__N_78 ), .B0(\breath_led_u1.n105[19] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[19] ), .Q1(\breath_led_u1.cnt1[18] ), 
+    .F0(\breath_led_u1.n132[19] ), .F1(\breath_led_u1.n132[18] ));
+  breath_led_u1_SLICE_33 \breath_led_u1.SLICE_33 ( 
+    .DI1(\breath_led_u1.n132[16] ), .DI0(\breath_led_u1.n132[17] ), 
+    .B1(\breath_led_u1.n105[16] ), .A1(\breath_led_u1.cnt1_24__N_78 ), 
+    .D0(\breath_led_u1.n105[17] ), .B0(\breath_led_u1.cnt1_24__N_78 ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[17] ), .Q1(\breath_led_u1.cnt1[16] ), 
+    .F0(\breath_led_u1.n132[17] ), .F1(\breath_led_u1.n132[16] ));
+  breath_led_u1_SLICE_35 \breath_led_u1.SLICE_35 ( 
+    .DI1(\breath_led_u1.n132[14] ), .DI0(\breath_led_u1.n132[15] ), 
+    .D1(\breath_led_u1.n105[14] ), .C1(\breath_led_u1.cnt1_24__N_78 ), 
+    .D0(\breath_led_u1.n105[15] ), .B0(\breath_led_u1.cnt1_24__N_78 ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[15] ), .Q1(\breath_led_u1.cnt1[14] ), 
+    .F0(\breath_led_u1.n132[15] ), .F1(\breath_led_u1.n132[14] ));
+  breath_led_u1_SLICE_37 \breath_led_u1.SLICE_37 ( 
+    .DI1(\breath_led_u1.n132[12] ), .DI0(\breath_led_u1.n132[13] ), 
+    .C1(\breath_led_u1.cnt1_24__N_78 ), .A1(\breath_led_u1.n105[12] ), 
+    .D0(\breath_led_u1.cnt1_24__N_78 ), .C0(\breath_led_u1.n105[13] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[13] ), .Q1(\breath_led_u1.cnt1[12] ), 
+    .F0(\breath_led_u1.n132[13] ), .F1(\breath_led_u1.n132[12] ));
+  breath_led_u1_SLICE_39 \breath_led_u1.SLICE_39 ( 
+    .DI1(\breath_led_u1.n132[10] ), .DI0(\breath_led_u1.n132[11] ), 
+    .C1(\breath_led_u1.cnt1_24__N_78 ), .B1(\breath_led_u1.n105[10] ), 
+    .D0(\breath_led_u1.cnt1_24__N_78 ), .B0(\breath_led_u1.n105[11] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[11] ), .Q1(\breath_led_u1.cnt1[10] ), 
+    .F0(\breath_led_u1.n132[11] ), .F1(\breath_led_u1.n132[10] ));
+  breath_led_u1_SLICE_41 \breath_led_u1.SLICE_41 ( 
+    .DI1(\breath_led_u1.n132[8] ), .DI0(\breath_led_u1.n132[9] ), 
+    .C1(\breath_led_u1.n105[8] ), .A1(\breath_led_u1.cnt1_24__N_78 ), 
+    .D0(\breath_led_u1.cnt1_24__N_78 ), .B0(\breath_led_u1.n105[9] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[9] ), .Q1(\breath_led_u1.cnt1[8] ), 
+    .F0(\breath_led_u1.n132[9] ), .F1(\breath_led_u1.n132[8] ));
+  breath_led_u1_SLICE_43 \breath_led_u1.SLICE_43 ( 
+    .DI1(\breath_led_u1.n132[6] ), .DI0(\breath_led_u1.n132[7] ), 
+    .C1(\breath_led_u1.n105[6] ), .A1(\breath_led_u1.cnt1_24__N_78 ), 
+    .D0(\breath_led_u1.n105[7] ), .B0(\breath_led_u1.cnt1_24__N_78 ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[7] ), .Q1(\breath_led_u1.cnt1[6] ), 
+    .F0(\breath_led_u1.n132[7] ), .F1(\breath_led_u1.n132[6] ));
+  breath_led_u1_SLICE_45 \breath_led_u1.SLICE_45 ( 
+    .DI1(\breath_led_u1.n132[4] ), .DI0(\breath_led_u1.n132[5] ), 
+    .D1(\breath_led_u1.cnt1_24__N_78 ), .C1(\breath_led_u1.n105[4] ), 
+    .C0(\breath_led_u1.cnt1_24__N_78 ), .B0(\breath_led_u1.n105[5] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[5] ), .Q1(\breath_led_u1.cnt1[4] ), 
+    .F0(\breath_led_u1.n132[5] ), .F1(\breath_led_u1.n132[4] ));
+  breath_led_u1_SLICE_47 \breath_led_u1.SLICE_47 ( 
+    .DI1(\breath_led_u1.n132[2] ), .DI0(\breath_led_u1.n132[3] ), 
+    .B1(\breath_led_u1.n105[2] ), .A1(\breath_led_u1.cnt1_24__N_78 ), 
+    .B0(\breath_led_u1.cnt1_24__N_78 ), .A0(\breath_led_u1.n105[3] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[3] ), .Q1(\breath_led_u1.cnt1[2] ), 
+    .F0(\breath_led_u1.n132[3] ), .F1(\breath_led_u1.n132[2] ));
+  breath_led_u1_SLICE_49 \breath_led_u1.SLICE_49 ( 
+    .DI1(\breath_led_u1.n132[0] ), .DI0(\breath_led_u1.n132[1] ), 
+    .D1(\breath_led_u1.n105[0] ), .B1(\breath_led_u1.cnt1_24__N_78 ), 
+    .C0(\breath_led_u1.cnt1_24__N_78 ), .A0(\breath_led_u1.n105[1] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q0(\breath_led_u1.cnt1[1] ), .Q1(\breath_led_u1.cnt1[0] ), 
+    .F0(\breath_led_u1.n132[1] ), .F1(\breath_led_u1.n132[0] ));
+  breath_led_u1_SLICE_52 \breath_led_u1.SLICE_52 ( 
+    .D1(\breath_led_u1.cnt2[20] ), .C1(\breath_led_u1.cnt1[20] ), 
+    .A1(\breath_led_u1.n40 ), .D0(\breath_led_u1.cnt2[19] ), 
+    .C0(\breath_led_u1.n38 ), .B0(\breath_led_u1.cnt1[19] ), 
+    .F0(\breath_led_u1.n40 ), .F1(\breath_led_u1.n42 ));
+  breath_led_u1_SLICE_54 \breath_led_u1.SLICE_54 ( 
+    .D1(\breath_led_u1.cnt2[22] ), .C1(\breath_led_u1.n44 ), 
+    .A1(\breath_led_u1.cnt1[22] ), .C0(\breath_led_u1.n42 ), 
+    .B0(\breath_led_u1.cnt1[21] ), .A0(\breath_led_u1.cnt2[21] ), 
+    .F0(\breath_led_u1.n44 ), .F1(\breath_led_u1.n46 ));
+  breath_led_u1_SLICE_56 \breath_led_u1.SLICE_56 ( 
+    .D1(\breath_led_u1.cnt1[24] ), .C1(\breath_led_u1.n48 ), 
+    .B1(\breath_led_u1.cnt2[24] ), .D0(\breath_led_u1.cnt2[23] ), 
+    .B0(\breath_led_u1.n46 ), .A0(\breath_led_u1.cnt1[23] ), 
+    .F0(\breath_led_u1.n48 ), .F1(yrgb_led_0));
+  breath_led_u1_SLICE_58 \breath_led_u1.SLICE_58 ( 
+    .D0(\breath_led_u1.cnt2[21] ), .B0(\breath_led_u1.cnt2[19] ), 
+    .F0(\breath_led_u1.n16 ));
+  breath_led_u1_SLICE_59 \breath_led_u1.SLICE_59 ( 
+    .D1(\breath_led_u1.cnt2[12] ), .C1(\breath_led_u1.n22 ), 
+    .B1(\breath_led_u1.cnt2[13] ), .A1(\breath_led_u1.n16 ), 
+    .D0(\breath_led_u1.cnt2[22] ), .C0(\breath_led_u1.cnt2[17] ), 
+    .B0(\breath_led_u1.cnt2[16] ), .A0(\breath_led_u1.cnt2[18] ), 
+    .F0(\breath_led_u1.n22 ), .F1(\breath_led_u1.n24 ));
+  breath_led_u1_SLICE_60 \breath_led_u1.SLICE_60 ( 
+    .D1(\breath_led_u1.cnt2[20] ), .C1(\breath_led_u1.n20 ), 
+    .B1(\breath_led_u1.n24 ), .A1(\breath_led_u1.cnt2[24] ), 
+    .D0(\breath_led_u1.cnt2[15] ), .C0(\breath_led_u1.cnt2[23] ), 
+    .B0(\breath_led_u1.cnt2[14] ), .F0(\breath_led_u1.n20 ), 
+    .F1(\breath_led_u1.n369 ));
+  breath_led_u1_SLICE_62 \breath_led_u1.SLICE_62 ( 
+    .D1(\breath_led_u1.cnt2[2] ), .C1(\breath_led_u1.cnt2[0] ), 
+    .B1(\breath_led_u1.n356 ), .A1(\breath_led_u1.cnt2[1] ), 
+    .D0(\breath_led_u1.cnt2[6] ), .C0(\breath_led_u1.cnt2[4] ), 
+    .B0(\breath_led_u1.cnt2[5] ), .A0(\breath_led_u1.cnt2[3] ), 
+    .F0(\breath_led_u1.n356 ), .F1(\breath_led_u1.n358 ));
+  breath_led_u1_SLICE_64 \breath_led_u1.SLICE_64 ( 
+    .D1(\breath_led_u1.cnt2[10] ), .C1(\breath_led_u1.cnt2[11] ), 
+    .B1(\breath_led_u1.n20_adj_114 ), .A1(\breath_led_u1.n369 ), 
+    .D0(\breath_led_u1.cnt2[8] ), .C0(\breath_led_u1.cnt2[7] ), 
+    .B0(\breath_led_u1.n358 ), .A0(\breath_led_u1.cnt2[9] ), 
+    .F0(\breath_led_u1.n20_adj_114 ), .F1(\breath_led_u1.flag_N_111 ));
+  breath_led_u1_SLICE_66 \breath_led_u1.SLICE_66 ( 
+    .D1(\breath_led_u1.cnt1[15] ), .C1(\breath_led_u1.cnt1[22] ), 
+    .B1(\breath_led_u1.cnt1[20] ), .D0(\breath_led_u1.cnt1[16] ), 
+    .B0(\breath_led_u1.cnt1[21] ), .F0(\breath_led_u1.n16_adj_115 ), 
+    .F1(\breath_led_u1.n20_adj_117 ));
+  breath_led_u1_SLICE_67 \breath_led_u1.SLICE_67 ( 
+    .D1(\breath_led_u1.n16_adj_115 ), .C1(\breath_led_u1.n22_adj_116 ), 
+    .B1(\breath_led_u1.cnt1[17] ), .A1(\breath_led_u1.cnt1[24] ), 
+    .D0(\breath_led_u1.cnt1[23] ), .C0(\breath_led_u1.cnt1[13] ), 
+    .B0(\breath_led_u1.cnt1[14] ), .A0(\breath_led_u1.cnt1[12] ), 
+    .F0(\breath_led_u1.n22_adj_116 ), .F1(\breath_led_u1.n24_adj_118 ));
+  breath_led_u1_SLICE_69 \breath_led_u1.SLICE_69 ( .C1(\breath_led_u1.n353 ), 
+    .A1(\breath_led_u1.n32 ), .D0(\breath_led_u1.n24_adj_118 ), 
+    .C0(\breath_led_u1.cnt1[19] ), .B0(\breath_led_u1.n20_adj_117 ), 
+    .A0(\breath_led_u1.cnt1[18] ), .F0(\breath_led_u1.n353 ), 
+    .F1(\breath_led_u1.n1082 ));
+  breath_led_u1_SLICE_70 \breath_led_u1.SLICE_70 ( .D1(\breath_led_u1.n32 ), 
+    .C1(\breath_led_u1.n1000 ), .B1(\breath_led_u1.n996 ), 
+    .A1(\breath_led_u1.cnt1[9] ), .D0(\breath_led_u1.cnt1[2] ), 
+    .B0(\breath_led_u1.cnt1[0] ), .A0(\breath_led_u1.cnt1[1] ), 
+    .F0(\breath_led_u1.n1000 ), .F1(\breath_led_u1.n20_adj_123 ));
+  breath_led_u1_SLICE_72 \breath_led_u1.SLICE_72 ( 
+    .D1(\breath_led_u1.cnt2[2] ), .C1(\breath_led_u1.n4 ), 
+    .A1(\breath_led_u1.cnt1[2] ), .D0(\breath_led_u1.cnt1[0] ), 
+    .C0(\breath_led_u1.cnt1[1] ), .B0(\breath_led_u1.cnt2[1] ), 
+    .A0(\breath_led_u1.cnt2[0] ), .F0(\breath_led_u1.n4 ), 
+    .F1(\breath_led_u1.n6 ));
+  breath_led_u1_SLICE_74 \breath_led_u1.SLICE_74 ( .C1(\breath_led_u1.n8 ), 
+    .B1(\breath_led_u1.cnt1[4] ), .A1(\breath_led_u1.cnt2[4] ), 
+    .D0(\breath_led_u1.cnt1[3] ), .C0(\breath_led_u1.n6 ), 
+    .B0(\breath_led_u1.cnt2[3] ), .F0(\breath_led_u1.n8 ), 
+    .F1(\breath_led_u1.n10 ));
+  breath_led_u1_SLICE_76 \breath_led_u1.SLICE_76 ( 
+    .D1(\breath_led_u1.cnt2[6] ), .C1(\breath_led_u1.n12 ), 
+    .A1(\breath_led_u1.cnt1[6] ), .D0(\breath_led_u1.cnt2[5] ), 
+    .C0(\breath_led_u1.n10 ), .A0(\breath_led_u1.cnt1[5] ), 
+    .F0(\breath_led_u1.n12 ), .F1(\breath_led_u1.n14 ));
+  breath_led_u1_SLICE_78 \breath_led_u1.SLICE_78 ( 
+    .D1(\breath_led_u1.cnt2[8] ), .C1(\breath_led_u1.n16_adj_144 ), 
+    .A1(\breath_led_u1.cnt1[8] ), .C0(\breath_led_u1.n14 ), 
+    .B0(\breath_led_u1.cnt2[7] ), .A0(\breath_led_u1.cnt1[7] ), 
+    .F0(\breath_led_u1.n16_adj_144 ), .F1(\breath_led_u1.n18 ));
+  breath_led_u1_SLICE_80 \breath_led_u1.SLICE_80 ( 
+    .D1(\breath_led_u1.cnt1[10] ), .C1(\breath_led_u1.n20_adj_145 ), 
+    .B1(\breath_led_u1.cnt2[10] ), .D0(\breath_led_u1.cnt1[9] ), 
+    .C0(\breath_led_u1.n18 ), .B0(\breath_led_u1.cnt2[9] ), 
+    .F0(\breath_led_u1.n20_adj_145 ), .F1(\breath_led_u1.n22_adj_146 ));
+  breath_led_u1_SLICE_82 \breath_led_u1.SLICE_82 ( 
+    .D1(\breath_led_u1.cnt2[12] ), .C1(\breath_led_u1.n24_adj_147 ), 
+    .B1(\breath_led_u1.cnt1[12] ), .D0(\breath_led_u1.cnt1[11] ), 
+    .C0(\breath_led_u1.n22_adj_146 ), .B0(\breath_led_u1.cnt2[11] ), 
+    .F0(\breath_led_u1.n24_adj_147 ), .F1(\breath_led_u1.n26 ));
+  breath_led_u1_SLICE_84 \breath_led_u1.SLICE_84 ( .C1(\breath_led_u1.n28 ), 
+    .B1(\breath_led_u1.cnt2[14] ), .A1(\breath_led_u1.cnt1[14] ), 
+    .C0(\breath_led_u1.n26 ), .B0(\breath_led_u1.cnt2[13] ), 
+    .A0(\breath_led_u1.cnt1[13] ), .F0(\breath_led_u1.n28 ), 
+    .F1(\breath_led_u1.n30 ));
+  breath_led_u1_SLICE_86 \breath_led_u1.SLICE_86 ( 
+    .D1(\breath_led_u1.cnt1[16] ), .C1(\breath_led_u1.n32_adj_148 ), 
+    .A1(\breath_led_u1.cnt2[16] ), .D0(\breath_led_u1.cnt1[15] ), 
+    .C0(\breath_led_u1.n30 ), .A0(\breath_led_u1.cnt2[15] ), 
+    .F0(\breath_led_u1.n32_adj_148 ), .F1(\breath_led_u1.n34 ));
+  breath_led_u1_SLICE_88 \breath_led_u1.SLICE_88 ( .C1(\breath_led_u1.n36 ), 
+    .B1(\breath_led_u1.cnt2[18] ), .A1(\breath_led_u1.cnt1[18] ), 
+    .C0(\breath_led_u1.n34 ), .B0(\breath_led_u1.cnt2[17] ), 
+    .A0(\breath_led_u1.cnt1[17] ), .F0(\breath_led_u1.n36 ), 
+    .F1(\breath_led_u1.n38 ));
+  breath_led_u1_SLICE_90 \breath_led_u1.SLICE_90 ( .D1(\breath_led_u1.n5 ), 
+    .C1(\breath_led_u1.n999 ), .B1(\breath_led_u1.cnt1[11] ), 
+    .A1(\breath_led_u1.n1082 ), .D0(\breath_led_u1.cnt1[1] ), 
+    .B0(\breath_led_u1.cnt1[0] ), .F0(\breath_led_u1.n999 ), 
+    .F1(\breath_led_u1.cnt2_24__N_104 ));
+  breath_led_u1_SLICE_92 \breath_led_u1.SLICE_92 ( 
+    .D1(\breath_led_u1.cnt1[10] ), .C1(\breath_led_u1.n996 ), 
+    .B1(\breath_led_u1.cnt1[2] ), .A1(\breath_led_u1.cnt1[9] ), 
+    .C0(\breath_led_u1.cnt1[8] ), .A0(\breath_led_u1.cnt1[7] ), 
+    .F0(\breath_led_u1.n996 ), .F1(\breath_led_u1.n5 ));
+  breath_led_u1_SLICE_94 \breath_led_u1.SLICE_94 ( 
+    .D0(\breath_led_u1.cnt1[6] ), .C0(\breath_led_u1.cnt1[3] ), 
+    .B0(\breath_led_u1.cnt1[4] ), .A0(\breath_led_u1.cnt1[5] ), 
+    .F0(\breath_led_u1.n32 ), .F1(\yrgb_led_pad[2].vcc ));
+  breath_led_u1_SLICE_96 \breath_led_u1.SLICE_96 ( .D1(rst_n_c), 
+    .D0(\breath_led_u1.cnt2[1] ), .C0(\breath_led_u1.cnt2[2] ), 
+    .B0(\breath_led_u1.cnt2[7] ), .A0(\breath_led_u1.cnt2[11] ), 
+    .F0(\breath_led_u1.n14_adj_149 ), .F1(\breath_led_u1.rst_n_N_27 ));
+  breath_led_u1_SLICE_97 \breath_led_u1.SLICE_97 ( .D1(\breath_led_u1.n369 ), 
+    .C1(\breath_led_u1.n13 ), .B1(\breath_led_u1.n14_adj_149 ), 
+    .A1(\breath_led_u1.n356 ), .D0(\breath_led_u1.cnt2[10] ), 
+    .C0(\breath_led_u1.cnt2[8] ), .B0(\breath_led_u1.cnt2[0] ), 
+    .A0(\breath_led_u1.cnt2[9] ), .F0(\breath_led_u1.n13 ), 
+    .F1(\breath_led_u1.n846 ));
+  breath_led_u1_SLICE_98 \breath_led_u1.SLICE_98 ( 
+    .DI1(\breath_led_u1.n132[24] ), .B1(\breath_led_u1.n105[24] ), 
+    .A1(\breath_led_u1.cnt1_24__N_78 ), .C0(\breath_led_u1.cnt1[24] ), 
+    .B0(\breath_led_u1.n48 ), .A0(\breath_led_u1.cnt2[24] ), 
+    .LSR(\breath_led_u1.rst_n_N_27 ), .CLK(clk_in_c), 
+    .Q1(\breath_led_u1.cnt1[24] ), .F0(yrgb_led_c), 
+    .F1(\breath_led_u1.n132[24] ));
+  breath_led_u1_SLICE_101 \breath_led_u1.SLICE_101 ( .D0(\breath_led_u1.flag ), 
+    .C0(\breath_led_u1.flag_N_111 ), .F0(\breath_led_u1.n129 ));
+  breath_led_u1_SLICE_102 \breath_led_u1.SLICE_102 ( .D0(\breath_led_u1.n353 ), 
+    .C0(\breath_led_u1.n20_adj_123 ), .B0(\breath_led_u1.cnt1[10] ), 
+    .A0(\breath_led_u1.cnt1[11] ), .F0(\breath_led_u1.cnt1_24__N_78 ));
+  breath_led_u1_SLICE_105 \breath_led_u1.SLICE_105 ( 
+    .D0(\breath_led_u1.cnt2_24__N_104 ), .C0(\breath_led_u1.n846 ), 
+    .B0(\breath_led_u1.flag ), .A0(\breath_led_u1.flag_N_111 ), 
+    .F0(\breath_led_u1.n43 ));
+  breath_led_u1_SLICE_106 \breath_led_u1.SLICE_106 ( 
+    .DI1(\breath_led_u1.n286 ), .D1(\breath_led_u1.flag_N_111 ), 
+    .C1(\breath_led_u1.flag ), .B1(\breath_led_u1.n846 ), 
+    .A1(\breath_led_u1.cnt2_24__N_104 ), .D0(\breath_led_u1.flag ), 
+    .C0(\breath_led_u1.flag_N_111 ), .LSR(\breath_led_u1.rst_n_N_27 ), 
+    .CLK(clk_in_c), .Q1(\breath_led_u1.flag ), .F0(\breath_led_u1.n11 ), 
+    .F1(\breath_led_u1.n286 ));
+  yrgb_led_2_ \yrgb_led[2]_I ( .PADDO(yrgb_led_0), .yrgbled2(yrgb_led[2]));
+  yrgb_led_3_ \yrgb_led[3]_I ( .PADDO(yrgb_led_c), .yrgbled3(yrgb_led[3]));
+  yrgb_led_1_ \yrgb_led[1]_I ( .PADDO(yrgb_led_c), .yrgbled1(yrgb_led[1]));
+  yrgb_led_0_ \yrgb_led[0]_I ( .PADDO(yrgb_led_0), .yrgbled0(yrgb_led[0]));
+  clk_in clk_in_I( .PADDI(clk_in_c), .clk_in(clk_in));
+  rst_n rst_n_I( .PADDI(rst_n_c), .rst_n(rst_n));
+endmodule
+
+module breath_led_u1_SLICE_0 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, LSR, 
+    CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_17 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i15 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i16 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module fa2 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI0, CI1, output S0, S1, 
+    CO0, CO1 );
+
+  FA2 inst1( .A0(A0), .B0(B0), .C0(C0), .D0(D0), .CI0(CI0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .CI1(CI1), .CO0(CO0), .CO1(CO1), .S0(S0), .S1(S1));
+  defparam inst1.INIT0 = "0xc33c";
+  defparam inst1.INIT1 = "0xc33c";
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module ffsre2 ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3XZ INST01( .D(D0), .SP(SP), .CK(CK), .SR(LSR), .Q(Q));
+  defparam INST01.REGSET = "RESET";
+  defparam INST01.SRMODE = "ASYNC";
+endmodule
+
+module breath_led_u1_SLICE_1 ( input D1, C1, B1, CIN1, output F1, COUT1, COUT0 );
+  wire   GNDI, VCCI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_1 ( .A0(GNDI), .B0(GNDI), .C0(GNDI), 
+    .D0(VCCI), .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), 
+    .S0(), .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module breath_led_u1_SLICE_2 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_19 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_3 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_3 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_4 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_11 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_5 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_9 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_6 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_7 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_7 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, LSR, 
+    CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_25 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i23 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i24 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_8 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_17 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_9 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, F1, 
+    COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_25 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_10 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_15 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_11 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_13 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_12 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_23 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_13 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_3 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i1 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i2 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_14 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_15 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i13 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i14 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_15 ( input DI1, D1, C1, B1, B0, CE, LSR, CLK, CIN1, 
+    output Q1, F1, COUT1, COUT0 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_1 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(VCCI), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), .S0(), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i0 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_16 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_23 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i21 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i22 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_17 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_21 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i19 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i20 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_18 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_5 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_19 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_13 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i11 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i12 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_20 ( input D1, C1, D0, C0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \breath_led_u1/cnt1_83_add_4_21 ( .A0(GNDI), .B0(GNDI), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(GNDI), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_21 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_11 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i9 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i10 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_22 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_9 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i7 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i8 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_23 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_7 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i5 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i6 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_24 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_5 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i3 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i4 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_25 ( input DI1, DI0, D1, C1, B1, D0, C0, B0, CE, 
+    LSR, CLK, CIN0, CIN1, output Q0, Q1, F0, F1, COUT1, COUT0 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly, LSR_dly;
+
+  fa2 \breath_led_u1/add_489_19 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i17 ( .D0(DI0_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q0));
+  ffsre2 \breath_led_u1/cnt2_res1_i0_i18 ( .D0(DI1_dly), .SP(CE_dly), 
+    .CK(CLK_dly), .LSR(LSR_dly), .Q(Q1));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_27 ( input DI1, DI0, C1, B1, B0, A0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut4 \breath_led_u1/i387_2_lut ( .A(GNDI), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 \breath_led_u1/i386_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i22 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i23 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0C0C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x2222") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_29 ( input DI1, DI0, C1, B1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut4 \breath_led_u1/i389_2_lut ( .A(GNDI), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40002 \breath_led_u1/i388_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i20 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i21 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3300") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_31 ( input DI1, DI0, C1, A1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40003 \breath_led_u1/i391_2_lut ( .A(A1), .B(GNDI), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \breath_led_u1/i390_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i18 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i19 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0A0A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00CC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_33 ( input DI1, DI0, B1, A1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40005 \breath_led_u1/i393_2_lut ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40002 \breath_led_u1/i392_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i16 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i17 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4444") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_35 ( input DI1, DI0, D1, C1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40006 \breath_led_u1/i395_2_lut ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40002 \breath_led_u1/i394_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i14 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i15 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0F00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_37 ( input DI1, DI0, C1, A1, D0, C0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40003 \breath_led_u1/i397_2_lut ( .A(A1), .B(GNDI), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40007 \breath_led_u1/i396_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i12 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i13 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_39 ( input DI1, DI0, C1, B1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut4 \breath_led_u1/i399_2_lut ( .A(GNDI), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \breath_led_u1/i398_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i10 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i11 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_41 ( input DI1, DI0, C1, A1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40008 \breath_led_u1/i401_2_lut ( .A(A1), .B(GNDI), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40004 \breath_led_u1/i400_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i8 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i9 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5050") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_43 ( input DI1, DI0, C1, A1, D0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40008 \breath_led_u1/i403_2_lut ( .A(A1), .B(GNDI), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40002 \breath_led_u1/i402_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i6 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i7 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_45 ( input DI1, DI0, D1, C1, C0, B0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40009 \breath_led_u1/i405_2_lut ( .A(GNDI), .B(GNDI), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40010 \breath_led_u1/i404_2_lut ( .A(GNDI), .B(B0), .C(C0), .D(GNDI), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i4 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i5 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00F0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0C0C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_47 ( input DI1, DI0, B1, A1, B0, A0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40005 \breath_led_u1/i407_2_lut ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 \breath_led_u1/i406_2_lut ( .A(A0), .B(B0), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i2 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i3 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_49 ( input DI1, DI0, D1, B1, C0, A0, LSR, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, DI0_dly, LSR_dly;
+
+  lut40011 \breath_led_u1/i380_2_lut ( .A(GNDI), .B(B1), .C(GNDI), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40012 \breath_led_u1/i408_2_lut ( .A(A0), .B(GNDI), .C(C0), .D(GNDI), 
+    .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i0 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+  ffsre2 \breath_led_u1/cnt1_83__i1 ( .D0(DI0_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3300") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0A0A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_52 ( input D1, C1, A1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40013 \breath_led_u1/cnt1_24__I_0_2_i42_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40014 \breath_led_u1/cnt1_24__I_0_2_i40_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAF0A") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_54 ( input D1, C1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40015 \breath_led_u1/cnt1_24__I_0_2_i46_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40016 \breath_led_u1/cnt1_24__I_0_2_i44_3_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40016 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB2B2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_56 ( input D1, C1, B1, D0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40017 \breath_led_u1.yrgb_led_1__I_0_1_lut ( .A(GNDI), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40018 \breath_led_u1/cnt1_24__I_0_2_i48_3_lut ( .A(A0), .B(B0), .C(GNDI), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x3F03") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xDD44") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_58 ( input D0, B0, output F0 );
+  wire   GNDI;
+
+  lut40019 \breath_led_u1/i3_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_59 ( input D1, C1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+
+  lut40020 \breath_led_u1/i11_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40021 \breath_led_u1/i9_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40020 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40021 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_60 ( input D1, C1, B1, A1, D0, C0, B0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40022 \breath_led_u1/i12_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40023 \breath_led_u1/i7_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40022 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40023 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_62 ( input D1, C1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+
+  lut40024 \breath_led_u1/i1_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40025 \breath_led_u1/i3_4_lut_adj_14 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40024 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xECCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40025 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_64 ( input D1, C1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+
+  lut40026 \breath_led_u1/i1_4_lut_adj_6 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40027 \breath_led_u1/i120_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40026 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEAAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40027 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEAAA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_66 ( input D1, C1, B1, D0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40028 \breath_led_u1/i7_3_lut_adj_9 ( .A(GNDI), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40029 \breath_led_u1/i3_2_lut_adj_7 ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40028 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40029 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFCC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_67 ( input D1, C1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+
+  lut40030 \breath_led_u1/i11_4_lut_adj_10 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40031 \breath_led_u1/i9_4_lut_adj_8 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40030 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40031 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_69 ( input C1, A1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40032 \breath_led_u1/i821_2_lut ( .A(A1), .B(GNDI), .C(C1), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40033 \breath_led_u1/i12_4_lut_adj_11 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40032 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFAFA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40033 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_70 ( input D1, C1, B1, A1, D0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40034 \breath_led_u1/i96_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40035 \breath_led_u1/i1_2_lut_3_lut ( .A(A0), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40034 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEEEA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40035 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8800") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_72 ( input D1, C1, A1, D0, C0, B0, A0, output F0, 
+    F1 );
+  wire   GNDI;
+
+  lut40015 \breath_led_u1/cnt1_24__I_0_2_i6_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40036 \breath_led_u1/cnt1_24__I_0_2_i4_4_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40036 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0C8E") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_74 ( input C1, B1, A1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40037 \breath_led_u1/cnt1_24__I_0_2_i10_3_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40038 \breath_led_u1/cnt1_24__I_0_2_i8_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40037 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xB2B2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40038 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_76 ( input D1, C1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40015 \breath_led_u1/cnt1_24__I_0_2_i14_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40039 \breath_led_u1/cnt1_24__I_0_2_i12_3_lut ( .A(A0), .B(GNDI), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40039 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF550") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_78 ( input D1, C1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40015 \breath_led_u1/cnt1_24__I_0_2_i18_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40040 \breath_led_u1/cnt1_24__I_0_2_i16_3_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40040 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xD4D4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_80 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40041 \breath_led_u1/cnt1_24__I_0_2_i22_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40038 \breath_led_u1/cnt1_24__I_0_2_i20_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40041 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xC0FC") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_82 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40042 \breath_led_u1/cnt1_24__I_0_2_i26_3_lut ( .A(GNDI), .B(B1), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40038 \breath_led_u1/cnt1_24__I_0_2_i24_3_lut ( .A(GNDI), .B(B0), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40042 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF330") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_84 ( input C1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40043 \breath_led_u1/cnt1_24__I_0_2_i30_3_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40040 \breath_led_u1/cnt1_24__I_0_2_i28_3_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40043 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xD4D4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_86 ( input D1, C1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40044 \breath_led_u1/cnt1_24__I_0_2_i34_3_lut ( .A(A1), .B(GNDI), .C(C1), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40045 \breath_led_u1/cnt1_24__I_0_2_i32_3_lut ( .A(A0), .B(GNDI), .C(C0), 
+    .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40044 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40045 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA0FA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_88 ( input C1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40043 \breath_led_u1/cnt1_24__I_0_2_i38_3_lut ( .A(A1), .B(B1), .C(C1), 
+    .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40040 \breath_led_u1/cnt1_24__I_0_2_i36_3_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module breath_led_u1_SLICE_90 ( input D1, C1, B1, A1, D0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40046 \breath_led_u1/i2_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40047 \breath_led_u1/i1_2_lut ( .A(GNDI), .B(B0), .C(GNDI), .D(D0), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40046 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40047 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xCC00") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_92 ( input D1, C1, B1, A1, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40048 \breath_led_u1/i1_4_lut_adj_16 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40049 \breath_led_u1/i1_2_lut_adj_13 ( .A(A0), .B(GNDI), .C(C0), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40048 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x4000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40049 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xA0A0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_94 ( input D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40050 \yrgb_led_pad[2].vhi_inst ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40051 \breath_led_u1/i3_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40050 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40051 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_96 ( input D1, D0, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40052 \breath_led_u1/rst_n_I_0_1_lut ( .A(GNDI), .B(GNDI), .C(GNDI), 
+    .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40033 \breath_led_u1/i6_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40052 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00FF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_97 ( input D1, C1, B1, A1, D0, C0, B0, A0, output 
+    F0, F1 );
+
+  lut40053 \breath_led_u1/i1_4_lut_adj_15 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40054 \breath_led_u1/i5_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40053 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40054 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_98 ( input DI1, B1, A1, C0, B0, A0, LSR, CLK, 
+    output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, LSR_dly;
+
+  lut40005 \breath_led_u1/i385_2_lut ( .A(A1), .B(B1), .C(GNDI), .D(GNDI), 
+    .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40055 \breath_led_u1/cnt1_24__I_0_2_i50_3_lut ( .A(A0), .B(B0), .C(C0), 
+    .D(GNDI), .Z(F0));
+  ffsre2 \breath_led_u1/cnt1_83__i24 ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40055 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8E8E") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_101 ( input D0, C0, output F0 );
+  wire   GNDI;
+
+  lut40056 \breath_led_u1/i377_2_lut ( .A(GNDI), .B(GNDI), .C(C0), .D(D0), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40056 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_102 ( input D0, C0, B0, A0, output F0 );
+
+  lut40057 \breath_led_u1/i1_4_lut_adj_12 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40057 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF80") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_105 ( input D0, C0, B0, A0, output F0 );
+
+  lut40058 \breath_led_u1/i1_4_lut_adj_17 ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(F0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40058 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xD100") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module breath_led_u1_SLICE_106 ( input DI1, D1, C1, B1, A1, D0, C0, LSR, CLK, 
+    output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly, LSR_dly;
+
+  lut40059 \breath_led_u1/i241_4_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(F1));
+  lut40060 \breath_led_u1/i378_1_lut_2_lut ( .A(GNDI), .B(GNDI), .C(C0), 
+    .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \breath_led_u1/flag_c ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(LSR_dly), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (LSR => Q1) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, LSR, 0:0:0, 0:0:0,,,, CLK_dly, LSR_dly);
+  endspecify
+
+endmodule
+
+module lut40059 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xDAD0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40060 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x000F") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module yrgb_led_2_ ( input PADDO, output yrgbled2 );
+  wire   VCCI;
+
+  BB_B_B \yrgb_led_pad[2].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(yrgbled2));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => yrgbled2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module BB_B_B ( input T_N, I, output O, inout B );
+
+  BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
+endmodule
+
+module yrgb_led_3_ ( input PADDO, output yrgbled3 );
+  wire   VCCI;
+
+  BB_B_B \yrgb_led_pad[3].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(yrgbled3));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => yrgbled3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module yrgb_led_1_ ( input PADDO, output yrgbled1 );
+  wire   VCCI;
+
+  BB_B_B \yrgb_led_pad[1].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(yrgbled1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => yrgbled1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module yrgb_led_0_ ( input PADDO, output yrgbled0 );
+  wire   VCCI;
+
+  BB_B_B \yrgb_led_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(yrgbled0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => yrgbled0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module clk_in ( output PADDI, input clk_in );
+  wire   GNDI;
+
+  BB_B_B \clk_in_pad.bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(clk_in));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (clk_in => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module rst_n ( output PADDI, input rst_n );
+  wire   GNDI;
+
+  BB_B_B \rst_n_pad.bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(rst_n));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (rst_n => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule

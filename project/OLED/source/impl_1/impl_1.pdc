@@ -1,0 +1,6 @@
+ldc_set_location -site {35} [get_ports clk_in]
+ldc_set_location -site {6} [get_ports rst_n_in]
+ldc_set_location -site {36} [get_ports oled_clk]
+ldc_set_location -site {37} [get_ports oled_dat]
+ldc_set_location -site {34} [get_ports oled_dcn]
+ldc_set_location -site {32} [get_ports oled_rst]

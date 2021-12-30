@@ -1,0 +1,4 @@
+#Start recording tcl command: 12/29/2021 15:31:13
+#Project Location: D:/shixi/project/FPGA/ICE40/Demo/project/WS2812_led; Project name: WS2812_led
+prj_open "D:/shixi/project/FPGA/ICE40/Demo/project/WS2812_led/WS2812_led.rdf"
+#Stop recording: 12/29/2021 15:31:13

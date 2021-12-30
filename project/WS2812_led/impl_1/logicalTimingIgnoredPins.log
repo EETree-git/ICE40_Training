@@ -1,0 +1,172 @@
+FA2/A0 input cycle_cnt_1180_add_4_3is connected to a constant net
+FA2/A1 input cycle_cnt_1180_add_4_3is connected to a constant net
+FA2/A0 input cnt_time_1178_add_4_25is connected to a constant net
+FA2/A1 input cnt_time_1178_add_4_25is connected to a constant net
+FA2/B1 input cnt_time_1178_add_4_25is connected to a constant net
+FA2/C1 input cnt_time_1178_add_4_25is connected to a constant net
+FA2/D1 input cnt_time_1178_add_4_25 has no outgoing device arc
+FA2/CI1 input cnt_time_1178_add_4_25 has no outgoing device arc
+     ** ws2812_u1/cnt_time_1178_add_4_25/CO0 is driving a pin on an incomplete path
+FA2/B0 input cnt_time_1178_add_4_25is connected to a constant net
+FA2/C0 input cnt_time_1178_add_4_25 is on an incomplete path
+FA2/CI0 input cnt_time_1178_add_4_25 is on an incomplete path
+FA2/A0 input rst_cnt_1181_add_4_3is connected to a constant net
+FA2/A1 input rst_cnt_1181_add_4_3is connected to a constant net
+FA2/A0 input cnt_time_1178_add_4_3is connected to a constant net
+FA2/A1 input cnt_time_1178_add_4_3is connected to a constant net
+VLO/Z GND  i5
+     *** ws2812_u1/cycle_cnt_1180_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_1/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_1/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_1/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_1/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_15/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_15/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_15/C1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_23/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_23/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_23/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_23/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_13/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_13/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_21/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_21/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_21/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_21/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_19/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_19/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_17/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_17/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_11/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_11/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_15/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_15/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_7/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_7/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_13/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_13/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_1/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_1/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_11/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_11/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_9/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_9/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_9/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_9/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_7/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_7/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_7/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_7/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_5/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_5/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_5/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_5/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_5/A0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_5/A1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** rst_n_in_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** clk_in_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+FA2/D1 input rst_cnt_1181_add_4_15 has no outgoing device arc
+FA2/CI1 input rst_cnt_1181_add_4_15 has no outgoing device arc
+     ** ws2812_u1/rst_cnt_1181_add_4_15/CO0 is driving a pin on an incomplete path
+FA2/C0 input rst_cnt_1181_add_4_15 is on an incomplete path
+FA2/CI0 input rst_cnt_1181_add_4_15 is on an incomplete path
+FA2/CI1 input cycle_cnt_1180_add_4_7 has no outgoing device arc
+VHI/Z VCC  led_pad.vhi_inst
+     *** ws2812_u1/rst_cnt_1181__i7/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/led_pwm/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i6/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i5/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i4/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i3/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i2/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i1/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/state_tran_c/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/state_tran_rst_c/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i6/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i5/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i4/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i3/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i2/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i1/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/state_FSM_i14/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/state_FSM_i13/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i9/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/state_FSM_i1/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i10/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180__i0/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i0/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i0/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cycle_cnt_1180_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i23/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i22/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i21/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i20/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i19/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i18/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i17/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i16/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i15/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i14/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i13/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i12/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i11/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i10/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i9/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i8/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i7/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i6/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i5/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i4/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i3/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i2/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/cnt_time_1178__i1/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i13/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i12/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i11/SP is driven by constant or a pin on an incomplete path
+     *** ws2812_u1/rst_cnt_1181__i8/SP is driven by constant or a pin on an incomplete path
+     *** led_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path

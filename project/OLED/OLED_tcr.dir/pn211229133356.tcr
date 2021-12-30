@@ -1,0 +1,11 @@
+#Start recording tcl command: 12/29/2021 13:24:35
+#Project Location: D:/shixi/project/FPGA/ICE40/Demo/project/OLED; Project name: OLED
+prj_create -name "OLED" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_add_source "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/impl_1.sdc" "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/impl_1.pdc"
+prj_save 
+prj_set_strategy_value -strategy Strategy1 bit_out_format=rbt
+prj_add_source "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/OLED12864.v" "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/top.v"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/29/2021 13:33:56

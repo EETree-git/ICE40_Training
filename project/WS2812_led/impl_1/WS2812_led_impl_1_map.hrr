@@ -1,0 +1,18 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        469        100.0
+                                 IOBUF	          3        100.0
+                                PFUREG	        238        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                ws2812	          1        65.0
+---------------------------------------------------
+Report for cell ws2812
+   Instance path: top/ws2812_u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        305        65.0
+                                PFUREG	        238        100.0

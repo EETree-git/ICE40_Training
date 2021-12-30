@@ -1,0 +1,18 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        134        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	         51        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            breath_led	          1        98.5
+---------------------------------------------------
+Report for cell breath_led
+   Instance path: top/breath_led_u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        132        98.5
+                                PFUREG	         51        100.0

@@ -1,0 +1,17 @@
+Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
+Thu Dec 30 11:00:35 2021
+
+Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
+	OLED_impl_1_map.udb OLED_impl_1.udb 
+
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          Run
+Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -            -            -            -            12           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 13 secs 
+
+par done!

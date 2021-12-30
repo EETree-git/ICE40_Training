@@ -1,0 +1,141 @@
+      Lattice Mapping Report File for Design Module 'breath_led_impl_1'
+
+Target Vendor:        LATTICE
+Target Device:        iCE40UP5KSG48
+Target Performance:   High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
+Mapped on: Tue Dec 28 22:05:05 2021
+
+Design Information
+------------------
+
+Command line:   map breath_led_impl_1_syn.udb
+     D:/shixi/project/FPGA/ICE40/breath_led/source/impl_1/impl_1.pdc -o
+     breath_led_impl_1_map.udb -mp breath_led_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers:  51 out of  5280 (1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           134 out of  5280 (3%)
+      Number of logic LUT4s:              82
+      Number of ripple logic:             26 (52 LUT4s)
+   Number of IO sites used:   6 out of 39 (15%)
+      Number of IO sites used for general PIO: 6
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 6 out of 36 (17%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 6 out of 39 (15%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_in_c: 39 loads, 39 rising, 0 falling (Driver: Port clk_in)
+   Number of Clock Enables:  1
+      Net breath_led_u1.n43: 13 loads, 13 SLICEs
+   Number of LSRs:  1
+      Net breath_led_u1.rst_n_N_27: 39 loads, 39 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net breath_led_u1.rst_n_N_27: 39 loads
+      Net breath_led_u1.cnt1_24__N_78: 25 loads
+      Net breath_led_u1.n129: 25 loads
+      Net breath_led_u1.n43: 13 loads
+      Net breath_led_u1.cnt1[0]: 4 loads
+      Net breath_led_u1.cnt1[24]: 4 loads
+      Net breath_led_u1.cnt2[0]: 4 loads
+      Net breath_led_u1.cnt2[1]: 4 loads
+      Net breath_led_u1.cnt2[24]: 4 loads
+      Net breath_led_u1.cnt2[2]: 4 loads
+
+                                    Page 1
+
+
+
+
+
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| yrgb_led[2]         | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| yrgb_led[3]         | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| yrgb_led[1]         | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| yrgb_led[0]         | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk_in              | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rst_n               | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i5 was optimized away.
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 56 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 2
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor
+     Corporation,  All rights reserved.

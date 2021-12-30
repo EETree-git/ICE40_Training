@@ -1,0 +1,20 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        803        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	        202        100.0
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             OLED12864	          1        88.4
+---------------------------------------------------
+Report for cell OLED12864
+   Instance path: top/OLED12864_u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        710        88.4
+                                PFUREG	        202        100.0
+                                   EBR	          6        100.0

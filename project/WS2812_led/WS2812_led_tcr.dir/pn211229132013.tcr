@@ -1,0 +1,12 @@
+#Start recording tcl command: 12/29/2021 13:10:27
+#Project Location: D:/shixi/project/FPGA/ICE40/WS2812_led; Project name: WS2812_led
+prj_create -name "WS2812_led" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_add_source "D:/shixi/project/FPGA/ICE40/WS2812_led/source/impl_1/impl_1.sdc" "D:/shixi/project/FPGA/ICE40/WS2812_led/source/impl_1/impl_1.pdc"
+prj_save 
+file copy -force -- "D:/shixi/project/FPGA/ICE40/Demo/project/top.v" "D:/shixi/project/FPGA/ICE40/Demo/project/ws2812.v" "D:/shixi/project/FPGA/ICE40/WS2812_led/source/impl_1"
+prj_add_source "D:/shixi/project/FPGA/ICE40/WS2812_led/source/impl_1/top.v" "D:/shixi/project/FPGA/ICE40/WS2812_led/source/impl_1/ws2812.v"
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_set_strategy_value -strategy Strategy1 bit_out_format=rbt
+prj_run Export -impl impl_1
+#Stop recording: 12/29/2021 13:20:13

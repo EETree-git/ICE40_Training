@@ -1,0 +1,7 @@
+SLICE/F1 VCC  breath_led_u1.SLICE_94
+     *** breath_led_u1.SLICE_1/B1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  breath_led_u1.SLICE_1
+     *** breath_led_u1.SLICE_1/D1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1.SLICE_1/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input breath_led_u1.SLICE_7 has no outgoing device arc
+SLICE/CIN1 input breath_led_u1.SLICE_9 has no outgoing device arc

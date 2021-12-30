@@ -1,0 +1,3 @@
+ldc_set_location -site {35} [get_ports clk_in]
+ldc_set_location -site {6} [get_ports rst_n_in]
+ldc_set_location -site {47} [get_ports led]

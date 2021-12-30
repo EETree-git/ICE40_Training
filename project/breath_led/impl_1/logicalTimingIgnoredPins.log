@@ -1,0 +1,116 @@
+FA2/A0 input cnt1_83_add_4_17is connected to a constant net
+FA2/A1 input cnt1_83_add_4_17is connected to a constant net
+FA2/A0 input add_489_25is connected to a constant net
+FA2/A1 input add_489_25is connected to a constant net
+FA2/CI1 input add_489_25 has no outgoing device arc
+FA2/A0 input cnt1_83_add_4_3is connected to a constant net
+FA2/A1 input cnt1_83_add_4_3is connected to a constant net
+FA2/A0 input cnt1_83_add_4_9is connected to a constant net
+FA2/A1 input cnt1_83_add_4_9is connected to a constant net
+FA2/A0 input cnt1_83_add_4_7is connected to a constant net
+FA2/A1 input cnt1_83_add_4_7is connected to a constant net
+FA2/A0 input cnt1_83_add_4_11is connected to a constant net
+FA2/A1 input cnt1_83_add_4_11is connected to a constant net
+FA2/A0 input cnt1_83_add_4_23is connected to a constant net
+FA2/A1 input cnt1_83_add_4_23is connected to a constant net
+FA2/A0 input cnt1_83_add_4_15is connected to a constant net
+FA2/A1 input cnt1_83_add_4_15is connected to a constant net
+FA2/A0 input cnt1_83_add_4_25is connected to a constant net
+FA2/A1 input cnt1_83_add_4_25is connected to a constant net
+FA2/CI1 input cnt1_83_add_4_25 has no outgoing device arc
+FA2/A0 input cnt1_83_add_4_13is connected to a constant net
+FA2/A1 input cnt1_83_add_4_13is connected to a constant net
+FA2/A0 input add_489_3is connected to a constant net
+FA2/A1 input add_489_3is connected to a constant net
+FA2/A0 input add_489_15is connected to a constant net
+FA2/A1 input add_489_15is connected to a constant net
+FA2/A0 input add_489_1is connected to a constant net
+FA2/A1 input add_489_1is connected to a constant net
+FA2/A0 input cnt1_83_add_4_21is connected to a constant net
+FA2/A1 input cnt1_83_add_4_21is connected to a constant net
+FA2/A0 input add_489_13is connected to a constant net
+FA2/A1 input add_489_13is connected to a constant net
+FA2/A0 input cnt1_83_add_4_5is connected to a constant net
+FA2/A1 input cnt1_83_add_4_5is connected to a constant net
+FA2/A0 input add_489_23is connected to a constant net
+FA2/A1 input add_489_23is connected to a constant net
+FA2/A0 input add_489_21is connected to a constant net
+FA2/A1 input add_489_21is connected to a constant net
+FA2/A0 input add_489_5is connected to a constant net
+FA2/A1 input add_489_5is connected to a constant net
+FA2/A0 input add_489_7is connected to a constant net
+FA2/A1 input add_489_7is connected to a constant net
+FA2/A0 input add_489_11is connected to a constant net
+FA2/A1 input add_489_11is connected to a constant net
+FA2/A0 input add_489_9is connected to a constant net
+FA2/A1 input add_489_9is connected to a constant net
+FA2/A0 input add_489_19is connected to a constant net
+FA2/A1 input add_489_19is connected to a constant net
+VHI/Z VCC  yrgb_led_pad[2].vhi_inst
+     *** breath_led_u1/cnt1_83__i24/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i23/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i22/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i21/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i20/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i19/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i18/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i17/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i16/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i15/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i14/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i13/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i12/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i11/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i10/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i9/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i8/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i7/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i6/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i5/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i4/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i3/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i2/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i1/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/flag_c/SP is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83__i0/SP is driven by constant or a pin on an incomplete path
+     *** yrgb_led_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** yrgb_led_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** yrgb_led_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** yrgb_led_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+FA2/A0 input cnt1_83_add_4_19is connected to a constant net
+FA2/A1 input cnt1_83_add_4_19is connected to a constant net
+VLO/Z GND  i5
+     *** breath_led_u1/add_489_17/A0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/add_489_17/A1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_1/A0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_1/A1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_25/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_25/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_23/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_23/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/add_489_1/C0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_21/B0 is driven by constant or a pin on an incomplete path
+     *** breath_led_u1/cnt1_83_add_4_21/B1 is driven by constant or a pin on an incomplete path
+     *** clk_in_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rst_n_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path

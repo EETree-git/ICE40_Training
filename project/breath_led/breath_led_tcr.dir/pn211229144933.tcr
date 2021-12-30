@@ -1,0 +1,10 @@
+#Start recording tcl command: 12/29/2021 14:14:39
+#Project Location: D:/shixi/project/FPGA/ICE40/Demo/project/breath_led; Project name: breath_led
+D:/shixi/project/FPGA/ICE40/Demo/project/OLED
+OLED
+#Start recording tcl command: 12/29/2021 14:49:32
+#Project Location: D:/shixi/project/FPGA/ICE40/Demo/project/OLED; Project name: OLED
+prj_open "D:/shixi/project/FPGA/ICE40/Demo/project/breath_led/breath_led.rdf"
+prj_close
+prj_open "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/OLED.rdf"
+#Stop recording: 12/29/2021 14:49:33

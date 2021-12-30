@@ -1,0 +1,24 @@
+SLICE/COUT0 GND  ws2812_u1.SLICE_4
+     *** ws2812_u1.SLICE_4/D1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1.SLICE_4/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  ws2812_u1.SLICE_5
+     *** ws2812_u1.SLICE_5/D1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1.SLICE_5/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input ws2812_u1.SLICE_6 has no outgoing device arc
+SLICE/CIN1 input ws2812_u1.SLICE_6 has no outgoing device arc
+     ** ws2812_u1.SLICE_6/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input ws2812_u1.SLICE_6 is on an incomplete path
+SLICE/CIN0 input ws2812_u1.SLICE_6 is on an incomplete path
+SLICE/D1 input ws2812_u1.SLICE_2 has no outgoing device arc
+SLICE/CIN1 input ws2812_u1.SLICE_2 has no outgoing device arc
+     ** ws2812_u1.SLICE_2/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input ws2812_u1.SLICE_2 is on an incomplete path
+SLICE/CIN0 input ws2812_u1.SLICE_2 is on an incomplete path
+SLICE/COUT0 GND  ws2812_u1.SLICE_16
+     *** ws2812_u1.SLICE_16/D1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1.SLICE_16/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/CIN1 input ws2812_u1.SLICE_14 has no outgoing device arc
+SLICE/F0 VCC  led_pad.SLICE_443
+     *** ws2812_u1.SLICE_4/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1.SLICE_5/B1 is driven by constant or a pin on an incomplete path
+     *** ws2812_u1.SLICE_16/B1 is driven by constant or a pin on an incomplete path

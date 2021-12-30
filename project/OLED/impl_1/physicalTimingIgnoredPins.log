@@ -1,0 +1,354 @@
+SLICE/COUT0 GND  OLED12864_u1.SLICE_1
+     *** OLED12864_u1.SLICE_1/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_1/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_5 has no outgoing device arc
+SLICE/CIN1 input OLED12864_u1.SLICE_5 has no outgoing device arc
+     ** OLED12864_u1.SLICE_5/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_5 is on an incomplete path
+SLICE/CIN0 input OLED12864_u1.SLICE_5 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_2 has no outgoing device arc
+SLICE/CIN1 input OLED12864_u1.SLICE_2 has no outgoing device arc
+     ** OLED12864_u1.SLICE_2/COUT0 is driving a pin on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_2 is on an incomplete path
+SLICE/CIN0 input OLED12864_u1.SLICE_2 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_17 has no outgoing device arc
+SLICE/CIN1 input OLED12864_u1.SLICE_17 has no outgoing device arc
+     ** OLED12864_u1.SLICE_17/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_17 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_17 is on an incomplete path
+SLICE/CIN0 input OLED12864_u1.SLICE_17 is on an incomplete path
+SLICE/COUT0 GND  OLED12864_u1.SLICE_15
+     *** OLED12864_u1.SLICE_15/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_15/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  OLED12864_u1.SLICE_20
+     *** OLED12864_u1.SLICE_20/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_20/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_21 has no outgoing device arc
+SLICE/CIN1 input OLED12864_u1.SLICE_21 has no outgoing device arc
+     ** OLED12864_u1.SLICE_21/COUT0 is driving a pin on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_21 is on an incomplete path
+SLICE/CIN0 input OLED12864_u1.SLICE_21 is on an incomplete path
+SLICE/COUT0 GND  OLED12864_u1.SLICE_25
+     *** OLED12864_u1.SLICE_25/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_25/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/F0 VCC  SLICE_37
+     *** SLICE_37/DI0 is driven by constant or a pin on an incomplete path
+SLICE/F0 VCC  oled_dat_pad.SLICE_773
+     *** OLED12864_u1.SLICE_15/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_20/C1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_25/C1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_39/RCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_39/RE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_39/WCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_76/RCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_76/RE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_76/WCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_79/RCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_79/RE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_79/WCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_82/RCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_82/RE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_82/WCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_85/RCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_85/RE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_85/WCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_73/RCLKE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_73/RE is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.mux_73/WCLKE is driven by constant or a pin on an incomplete path
+EBR/RADDR6 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RADDR5 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RADDR4 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RADDR3 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RADDR2 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RADDR1 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RADDR0 input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RCLK input OLED12864_u1.mux_76 has no outgoing device arc
+EBR/RDATA14 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA12 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA10 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA8 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA6 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA4 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA2 output  OLED12864_u1.mux_76 has no incoming device arc
+EBR/RDATA0 output  OLED12864_u1.mux_76 has no incoming device arc
+     *** OLED12864_u1.SLICE_363/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_369/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_694/A0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_567/C0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_769/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_705/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_403/C0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_403/A1 is driven by constant or a pin on an incomplete path
+EBR/RADDR4 input OLED12864_u1.mux_39 has no outgoing device arc
+EBR/RADDR3 input OLED12864_u1.mux_39 has no outgoing device arc
+EBR/RADDR2 input OLED12864_u1.mux_39 has no outgoing device arc
+EBR/RADDR1 input OLED12864_u1.mux_39 has no outgoing device arc
+EBR/RADDR0 input OLED12864_u1.mux_39 has no outgoing device arc
+EBR/RCLK input OLED12864_u1.mux_39 has no outgoing device arc
+EBR/RDATA14 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA12 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA10 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA8 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA6 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA4 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA2 output  OLED12864_u1.mux_39 has no incoming device arc
+EBR/RDATA0 output  OLED12864_u1.mux_39 has no incoming device arc
+     *** OLED12864_u1.SLICE_355/A0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_617/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_389/A0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_389/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_617/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_357/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_253/A0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_243/B0 is driven by constant or a pin on an incomplete path
+EBR/RADDR6 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RADDR5 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RADDR4 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RADDR3 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RADDR2 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RADDR1 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RADDR0 input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RCLK input OLED12864_u1.mux_79 has no outgoing device arc
+EBR/RDATA14 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA12 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA10 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA8 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA6 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA4 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA2 output  OLED12864_u1.mux_79 has no incoming device arc
+EBR/RDATA0 output  OLED12864_u1.mux_79 has no incoming device arc
+     *** OLED12864_u1.SLICE_368/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_367/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_397/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_703/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_398/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_397/C1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_427/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_703/A1 is driven by constant or a pin on an incomplete path
+EBR/RADDR6 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RADDR5 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RADDR4 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RADDR3 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RADDR2 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RADDR1 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RADDR0 input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RCLK input OLED12864_u1.mux_73 has no outgoing device arc
+EBR/RDATA14 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA12 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA10 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA8 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA6 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA4 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA2 output  OLED12864_u1.mux_73 has no incoming device arc
+EBR/RDATA0 output  OLED12864_u1.mux_73 has no incoming device arc
+     *** OLED12864_u1.SLICE_391/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_400/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_469/C0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_567/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_619/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_392/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_405/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_363/C1 is driven by constant or a pin on an incomplete path
+EBR/RADDR6 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RADDR5 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RADDR4 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RADDR3 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RADDR2 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RADDR1 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RADDR0 input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RCLK input OLED12864_u1.mux_82 has no outgoing device arc
+EBR/RDATA14 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA12 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA10 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA8 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA6 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA4 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA2 output  OLED12864_u1.mux_82 has no incoming device arc
+EBR/RDATA0 output  OLED12864_u1.mux_82 has no incoming device arc
+     *** OLED12864_u1.SLICE_365/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_568/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_619/A0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_392/D1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_694/C0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_391/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_469/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_405/A0 is driven by constant or a pin on an incomplete path
+EBR/RADDR6 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RADDR5 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RADDR4 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RADDR3 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RADDR2 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RADDR1 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RADDR0 input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RCLK input OLED12864_u1.mux_85 has no outgoing device arc
+EBR/RDATA14 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA12 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA10 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA8 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA6 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA4 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA2 output  OLED12864_u1.mux_85 has no incoming device arc
+EBR/RDATA0 output  OLED12864_u1.mux_85 has no incoming device arc
+     *** OLED12864_u1.SLICE_363/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_705/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_706/B1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_706/C0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_399/D0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_567/B0 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_400/C1 is driven by constant or a pin on an incomplete path
+     *** OLED12864_u1.SLICE_705/C1 is driven by constant or a pin on an incomplete path
+     ** OLED12864_u1.SLICE_371/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_589/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_724/F0 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_304/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_524/F0 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_571/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_563/F1 is driving a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_304 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_304 is on an incomplete path
+     ** OLED12864_u1.SLICE_304/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_304 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_304 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_304 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_304 is on an incomplete path
+     ** OLED12864_u1.SLICE_303/F0 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_317/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_311/F1 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_303 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_303 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_303 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_303 is on an incomplete path
+     ** OLED12864_u1.SLICE_323/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_335/F1 is driving a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_311 is on an incomplete path
+     ** OLED12864_u1.SLICE_311/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_311 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_317 is on an incomplete path
+     ** OLED12864_u1.SLICE_317/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_317 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_323 is on an incomplete path
+     ** OLED12864_u1.SLICE_323/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_323 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_335 is on an incomplete path
+     ** OLED12864_u1.SLICE_335/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_335 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_371 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_371 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_371 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_371 is on an incomplete path
+     ** OLED12864_u1.SLICE_692/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_692/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_524 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_524 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_524 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_524 is on an incomplete path
+     ** OLED12864_u1.SLICE_523/F0 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_287/F1 is driving a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_287 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_287 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_287 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_287 is on an incomplete path
+     ** OLED12864_u1.SLICE_287/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_287 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_287 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_287 is on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_523 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_523 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_523 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_523 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_563 is on an incomplete path
+     ** OLED12864_u1.SLICE_563/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_563 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_571 is on an incomplete path
+     ** OLED12864_u1.SLICE_299/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_571/F0 is driving a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_299 is on an incomplete path
+     ** OLED12864_u1.SLICE_299/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_299 is on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_571 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_589 is on an incomplete path
+     ** OLED12864_u1.SLICE_371/F0 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_351/F1 is driving a pin on an incomplete path
+     ** OLED12864_u1.SLICE_589/F0 is driving a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_351 is on an incomplete path
+     ** OLED12864_u1.SLICE_351/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_351 is on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_371 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_371 is on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_589 is on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_692 is on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_724 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_724 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_724 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_724 is on an incomplete path
+     ** OLED12864_u1.SLICE_261/F1 is driving a pin on an incomplete path
+SLICE/D1 input OLED12864_u1.SLICE_261 is on an incomplete path
+SLICE/C1 input OLED12864_u1.SLICE_261 is on an incomplete path
+SLICE/B1 input OLED12864_u1.SLICE_261 is on an incomplete path
+SLICE/A1 input OLED12864_u1.SLICE_261 is on an incomplete path
+     ** OLED12864_u1.SLICE_261/F0 is driving a pin on an incomplete path
+SLICE/D0 input OLED12864_u1.SLICE_261 is on an incomplete path
+SLICE/C0 input OLED12864_u1.SLICE_261 is on an incomplete path
+SLICE/B0 input OLED12864_u1.SLICE_261 is on an incomplete path
+SLICE/A0 input OLED12864_u1.SLICE_261 is on an incomplete path

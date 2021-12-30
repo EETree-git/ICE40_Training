@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  51 of 5280 (0.966%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        26          100.0
+                            FD1P3XZ        51          100.0
+                                 IB         2          100.0
+                               LUT4        81          100.0
+                                 OB         4          100.0
+SUB MODULES
+                         breath_led         1
+                              TOTAL       165
+----------------------------------------------------------------------
+Report for cell breath_led.v1
+Instance Path : breath_led_u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        26          100.0
+                            FD1P3XZ        51          100.0
+                               LUT4        81          100.0
+                              TOTAL       158

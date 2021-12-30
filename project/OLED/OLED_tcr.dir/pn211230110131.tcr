@@ -1,0 +1,11 @@
+#Start recording tcl command: 12/30/2021 09:37:10
+#Project Location: D:/shixi/project/FPGA/ICE40/Demo/project/OLED; Project name: OLED
+prj_open "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/OLED.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/30/2021 11:01:31

@@ -1,0 +1,6 @@
+ldc_set_location -site {6} [get_ports rst_n]
+ldc_set_location -site {2} [get_ports {yrgb_led[3]}]
+ldc_set_location -site {9} [get_ports {yrgb_led[2]}]
+ldc_set_location -site {4} [get_ports {yrgb_led[1]}]
+ldc_set_location -site {3} [get_ports {yrgb_led[0]}]
+ldc_set_location -site {35} [get_ports clk_in]

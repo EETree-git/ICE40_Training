@@ -1,0 +1,207 @@
+         Lattice Mapping Report File for Design Module 'OLED_impl_1'
+
+Target Vendor:        LATTICE
+Target Device:        iCE40UP5KSG48
+Target Performance:   High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
+Mapped on: Thu Dec 30 11:00:32 2021
+
+Design Information
+------------------
+
+Command line:   map OLED_impl_1_syn.udb
+     D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/impl_1.pdc -o
+     OLED_impl_1_map.udb -mp OLED_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers: 202 out of  5280 (4%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           803 out of  5280 (15%)
+      Number of logic LUT4s:             713
+      Number of inserted feedthru LUT4s:  11
+      Number of replicated LUT4s:         25
+      Number of ripple logic:             27 (54 LUT4s)
+   Number of IO sites used:   6 out of 39 (15%)
+      Number of IO sites used for general PIO: 6
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 6 out of 36 (17%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 6 out of 39 (15%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             6 out of 30 (20%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_in_c: 208 loads, 208 rising, 0 falling (Driver: Port clk_in)
+   Number of Clock Enables:  17
+      Net n11646: 15 loads, 15 SLICEs
+      Net oled_dat_pad.vcc: 18 loads, 0 SLICEs
+      Net OLED12864_u1.n11648: 16 loads, 16 SLICEs
+      Net OLED12864_u1.n11649: 8 loads, 8 SLICEs
+      Net OLED12864_u1.n11307: 1 loads, 1 SLICEs
+      Net OLED12864_u1.n11665: 7 loads, 7 SLICEs
+      Net OLED12864_u1.n15: 1 loads, 1 SLICEs
+      Net OLED12864_u1.n11664: 1 loads, 1 SLICEs
+      Net OLED12864_u1.cnt_main_4__N_311: 6 loads, 6 SLICEs
+      Net OLED12864_u1.n11666: 7 loads, 7 SLICEs
+      Net OLED12864_u1.n11667: 16 loads, 16 SLICEs
+      Net OLED12864_u1.n11668: 5 loads, 5 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net OLED12864_u1.n11669: 5 loads, 5 SLICEs
+      Net OLED12864_u1.n11670: 8 loads, 8 SLICEs
+      Net OLED12864_u1.n5760: 1 loads, 1 SLICEs
+      Net OLED12864_u1.n25_adj_867: 1 loads, 1 SLICEs
+      Net OLED12864_u1.n11645: 5 loads, 5 SLICEs
+   Number of LSRs:  1
+      Net OLED12864_u1.rst_n_N_18: 200 loads, 200 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net OLED12864_u1.rst_n_N_18: 200 loads
+      Net OLED12864_u1.cnt_chinese[0]: 78 loads
+      Net OLED12864_u1.cnt_chinese[1]: 75 loads
+      Net OLED12864_u1.mem_hanzi_num[2]: 61 loads
+      Net OLED12864_u1.mem_hanzi_num[1]: 60 loads
+      Net OLED12864_u1.state[3]: 44 loads
+      Net cnt_main_4__N_308: 41 loads
+      Net OLED12864_u1.cnt_chinese[2]: 41 loads
+      Net OLED12864_u1.state[0]: 41 loads
+      Net n5730: 39 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rst_n_in            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk_in              | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| oled_dat            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| oled_clk            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| oled_dcn            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| oled_rst            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i5 was optimized away.
+
+
+
+
+                                    Page 2
+
+
+
+
+
+ASIC Components
+---------------
+
+Instance Name: OLED12864_u1/mux_39
+         Type: EBR
+Instance Name: OLED12864_u1/mux_76
+         Type: EBR
+Instance Name: OLED12864_u1/mux_79
+         Type: EBR
+Instance Name: OLED12864_u1/mux_82
+         Type: EBR
+Instance Name: OLED12864_u1/mux_85
+         Type: EBR
+Instance Name: OLED12864_u1/mux_73
+         Type: EBR
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 65 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor
+     Corporation,  All rights reserved.

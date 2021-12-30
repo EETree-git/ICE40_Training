@@ -1,0 +1,25 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  202 of 5280 (3.826%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         6          100.0
+                               CCU2        27          100.0
+                            FD1P3XZ       202          100.0
+                                 IB         2          100.0
+                               LUT4       711          100.0
+                                 OB         4          100.0
+SUB MODULES
+                          OLED12864         1
+                              TOTAL       953
+----------------------------------------------------------------------
+Report for cell OLED12864.v1
+Instance Path : OLED12864_u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         6          100.0
+                                FA2        27          100.0
+                            FD1P3XZ       202          100.0
+                               LUT4       694           97.6
+                              TOTAL       929

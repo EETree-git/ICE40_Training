@@ -1,0 +1,2378 @@
+<HTML>
+<HEAD>
+<TITLE>Synthesis Report</TITLE>
+<link href="file:///D:/shixi/install/lattice/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///D:/shixi/install/lattice/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+synthesis:  version Radiant Software (64-bit) 3.0.0.24.1
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Dec 30 11:00:23 2021
+
+
+Command Line:  D:\shixi\install\lattice\ispfpga\bin\nt64\synthesis.exe -f OLED_impl_1_lattice.synproj -gui -msgset D:/shixi/project/FPGA/ICE40/Demo/project/OLED/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = OLED_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/impl_1.sdc.
+-path D:/shixi/install/lattice/ispfpga/ice40tp/data (searchpath added)
+-path D:/shixi/project/FPGA/ICE40/Demo/project/OLED (searchpath added)
+-path D:/shixi/project/FPGA/ICE40/Demo/project/OLED/impl_1 (searchpath added)
+Mixed language design
+Verilog design file = D:/shixi/install/lattice/ip/pmi/pmi_iCE40UP.v
+Verilog design file = D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/OLED12864.v
+Verilog design file = D:/shixi/project/FPGA/ICE40/Demo/project/OLED/source/impl_1/top.v
+VHDL library = pmi
+VHDL design file = D:/shixi/install/lattice/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(1): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_addsub.v(40): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(2): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_add.v(50): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(3): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_complex_mult.v(52): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(4): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_counter.v(39): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(5): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_fifo.v(44): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(6): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_fifo_dc.v(47): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(7): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_mac.v(52): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(8): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(9): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_multaddsub.v(52): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(10): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_mult.v(51): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(11): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ram_dp.v(48): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(12): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ram_dq.v(45): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(13): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_rom.v(45): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(14): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_sub.v(50): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(15): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(16): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file d:/shixi/install/lattice/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.v(17): analyzing included file d:/shixi/install/lattice/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v. VERI-1482
+Analyzing Verilog file d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v. VERI-1482
+Analyzing VHDL file d:/shixi/install/lattice/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file d:/shixi/install/lattice/ip/pmi/pmi_ice40up.vhd
+
+INFO - synthesis: d:/shixi/install/lattice/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+unit top is not yet analyzed. VHDL-1485
+INFO - synthesis: The default VHDL library search path is now "D:/shixi/project/FPGA/ICE40/Demo/project/OLED/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): top
+INFO - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(1): compiling module top. VERI-1018
+INFO - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(8): compiling module OLED12864. VERI-1018
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(159): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(361): Register mem[122][39] is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(361): Register mem[122][38] is stuck at One. VDB-5014
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(379): Register mem_hanzi[7][127] is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(379): Register mem_hanzi[7][126] is stuck at One. VDB-5014
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(29): net mem[31][39] does not have a driver. VDB-1002
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(30): net mem_hanzi[16][127] does not have a driver. VDB-1002
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[3]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[2]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[1]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[0]' is not connected on this instance
+
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 7 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 6 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 5 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 4 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: Bit 3 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 2 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 1 of Register cmd[0] is stuck at One
+WARNING - synthesis: Bit 0 of Register cmd[0] is stuck at Zero
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[3]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[2]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[1]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[0]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[3]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[2]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[1]' is not connected on this instance
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/top.v(22): input port 'sw[0]' is not connected on this instance
+
+######## Missing driver on net \OLED12864_u1/mem[31][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[31][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[30][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[29][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[28][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[27][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[26][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[25][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[24][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[23][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[22][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[21][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[20][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[19][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[18][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[17][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem[16][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[16][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[15][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[14][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[13][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[12][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[11][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[10][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[9][0]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][127]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][126]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][125]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][124]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][123]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][122]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][121]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][120]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][119]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][118]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][117]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][116]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][115]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][114]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][113]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][112]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][111]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][110]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][109]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][108]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][107]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][106]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][105]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][104]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][103]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][102]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][101]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][100]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][99]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][98]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][97]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][96]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][95]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][94]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][93]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][92]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][91]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][90]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][89]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][88]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][87]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][86]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][85]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][84]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][83]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][82]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][81]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][80]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][79]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][78]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][77]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][76]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][75]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][74]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][73]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][72]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][71]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][70]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][69]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][68]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][67]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][66]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][65]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][64]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][63]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][62]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][61]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][60]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][59]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][58]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][57]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][56]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][55]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][54]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][53]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][52]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][51]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][50]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][49]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][48]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][47]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][46]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][45]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][44]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][43]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][42]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][41]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][40]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][39]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][38]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][37]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][36]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][35]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][34]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][33]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][32]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][31]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][30]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][29]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][28]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][27]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][26]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][25]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][24]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][23]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][22]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][21]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][20]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][19]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][18]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][17]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][16]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][15]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][14]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][13]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][12]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][11]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][10]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][9]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][8]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][7]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][6]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][5]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][4]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][3]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][2]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][1]. Patching with GND.
+######## Missing driver on net \OLED12864_u1/mem_hanzi[8][0]. Patching with GND.
+
+
+
+Duplicate register/latch removal. i390 is a one-to-one match with i340.
+Duplicate register/latch removal. i381 is a one-to-one match with i331.
+Duplicate register/latch removal. i322 is a one-to-one match with i313.
+Duplicate register/latch removal. i390 is a one-to-one match with i322.
+Duplicate register/latch removal. i381 is a one-to-one match with i390.
+Removed duplicate sequential element \OLED12864_u1/char_reg_ret13(8 bit), because it is equivalent to \OLED12864_u1/char_reg_ret8
+
+Removed duplicate sequential element \OLED12864_u1/char_reg_ret16(8 bit), because it is equivalent to \OLED12864_u1/char_reg_ret8
+
+Removed duplicate sequential element \OLED12864_u1/char_reg_ret35(8 bit), because it is equivalent to \OLED12864_u1/char_reg_ret8
+
+WARNING - synthesis: d:/shixi/project/fpga/ice40/demo/project/oled/source/impl_1/oled12864.v(218): Register \OLED12864_u1/x_pl_i0_i0 is stuck at Zero. VDB-5013
+
+
+<A name="lse_area"></A><B><U><big>Area Report</big></U></B>
+
+################### Begin Area Report (top)######################
+Number of register bits => 202 of 5280 (3 % )
+EBR_B => 6
+CCU2 => 27
+FD1P3XZ => 202
+IB => 2
+LUT4 => 711
+OB => 4
+################### End Area Report ##################
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 4
+
+
+<A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_in_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : OLED12864_u1/rst_n_N_18, loads : 201
+  Net : OLED12864_u1/cnt_chinese[0], loads : 78
+  Net : OLED12864_u1/cnt_chinese[1], loads : 75
+  Net : OLED12864_u1/mem_hanzi_num[2], loads : 61
+  Net : OLED12864_u1/mem_hanzi_num[1], loads : 60
+  Net : OLED12864_u1/state[3], loads : 42
+  Net : OLED12864_u1/cnt_main_4__N_308, loads : 41
+  Net : OLED12864_u1/cnt_chinese[2], loads : 41
+  Net : n5730, loads : 39
+  Net : OLED12864_u1/state[0], loads : 38
+################### End Clock Report ##################
+
+Peak Memory Usage: 129 MB
+
+--------------------------------------------------------------
+Total CPU Time: 5 secs 
+Total REAL Time: 6 secs 
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#Syn>Top</A></LI>
+<LI><A href=#lse_area>Area Report</A></LI>
+<LI><A href=#lse_clock>Clock Report</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

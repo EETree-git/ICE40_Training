@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1640833253">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1640833253"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1640833255"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1640833258"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1640833233">
+            <Task name="Map" build_result="2" update_result="0" update_time="1640833233"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1640833234"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1640833248">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1640833248"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1640833251"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1640755476"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1640833230">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1640833230"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1640833258"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1640833231"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1640755559"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1640755559"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1640755559"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1640755559"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1640755559"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1640755559"/>
+        </Milestone>
+        <Report name="IBIS/OLED_impl_1.ibs" last_build_time="1640833255" last_build_size="54071"/>
+        <Report name="OLED_impl_1.bgn" last_build_time="1640833253" last_build_size="989"/>
+        <Report name="OLED_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="OLED_impl_1.rbt" last_build_time="1640833253" last_build_size="854372"/>
+        <Report name="OLED_impl_1.tw1.html" last_build_time="1640833234" last_build_size="12696"/>
+        <Report name="OLED_impl_1.twr.html" last_build_time="1640833251" last_build_size="12700"/>
+        <Report name="OLED_impl_1.tws.html" last_build_time="1640833231" last_build_size="12507"/>
+        <Report name="OLED_impl_1.udb" last_build_time="1640833248" last_build_size="117827"/>
+        <Report name="OLED_impl_1_map.udb" last_build_time="1640833232" last_build_size="61229"/>
+        <Report name="OLED_impl_1_rtl.udb" last_build_time="1640833225" last_build_size="85149"/>
+        <Report name="OLED_impl_1_syn.udb" last_build_time="1640833230" last_build_size="40873"/>
+        <Report name="OLED_impl_1_vo.sdf" last_build_time="1640833258" last_build_size="650141"/>
+        <Report name="OLED_impl_1_vo.vo" last_build_time="1640833258" last_build_size="627640"/>
+    </Strategy>
+</BuildStatus>

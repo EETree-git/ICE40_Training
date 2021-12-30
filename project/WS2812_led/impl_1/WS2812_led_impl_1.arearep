@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  238 of 5280 (4.508%)
+I/O cells:      3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        25          100.0
+                            FD1P3XZ       238          100.0
+                                 IB         2          100.0
+                               LUT4       255          100.0
+                                 OB         1          100.0
+SUB MODULES
+                             ws2812         1
+                              TOTAL       522
+----------------------------------------------------------------------
+Report for cell ws2812.v1
+Instance Path : ws2812_u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        25          100.0
+                            FD1P3XZ       238          100.0
+                               LUT4       255          100.0
+                              TOTAL       518

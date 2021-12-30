@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ProjectGui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_guix.xsd">
+
+  <SchemaVersion>-6.1</SchemaVersion>
+
+  <Header>### uVision Project, (C) Keil Software</Header>
+
+  <PrjGuiSettings>
+    <LastAddFilePath></LastAddFilePath>
+  </PrjGuiSettings>
+
+  <ViewPool/>
+
+  <SECTreeCtrl>
+    <View>
+      <WinId>38003</WinId>
+      <ViewName>Registers</ViewName>
+      <TableColWidths>115 45</TableColWidths>
+    </View>
+    <View>
+      <WinId>346</WinId>
+      <ViewName>Code Coverage</ViewName>
+      <TableColWidths>665 160</TableColWidths>
+    </View>
+    <View>
+      <WinId>204</WinId>
+      <ViewName>Performance Analyzer</ViewName>
+      <TableColWidths>825</TableColWidths>
+    </View>
+  </SECTreeCtrl>
+
+  <TreeListPane>
+    <View>
+      <WinId>35141</WinId>
+      <ViewName>Event Statistics</ViewName>
+      <UserString></UserString>
+      <TableColWidths>200 50 700</TableColWidths>
+    </View>
+    <View>
+      <WinId>1506</WinId>
+      <ViewName>Symbols</ViewName>
+      <UserString></UserString>
+      <TableColWidths>56 56 56</TableColWidths>
+    </View>
+    <View>
+      <WinId>1936</WinId>
+      <ViewName>Watch 1</ViewName>
+      <UserString></UserString>
+      <TableColWidths>200 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1937</WinId>
+      <ViewName>Watch 2</ViewName>
+      <UserString></UserString>
+      <TableColWidths>200 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>1935</WinId>
+      <ViewName>Call Stack + Locals</ViewName>
+      <UserString></UserString>
+      <TableColWidths>200 133 133</TableColWidths>
+    </View>
+    <View>
+      <WinId>2506</WinId>
+      <ViewName>Trace Data</ViewName>
+      <UserString></UserString>
+      <TableColWidths>75 135 130 95 70 230 200 150</TableColWidths>
+    </View>
+    <View>
+      <WinId>466</WinId>
+      <ViewName>Source Browser</ViewName>
+      <UserString>500</UserString>
+      <TableColWidths>300</TableColWidths>
+    </View>
+  </TreeListPane>
+
+  <CompViewPool/>
+
+  <WindowSettings>
+    <LogicAnalizer>
+      <ShowLACursor>1</ShowLACursor>
+      <ShowSignalInfo>1</ShowSignalInfo>
+      <ShowCycles>0</ShowCycles>
+      <LeftSideBarSize>0</LeftSideBarSize>
+      <TimeBaseIndex>-1</TimeBaseIndex>
+    </LogicAnalizer>
+  </WindowSettings>
+
+  <WinLayoutEx>
+    <sActiveDebugView></sActiveDebugView>
+    <WindowPosition>
+      <length>44</length>
+      <flags>2</flags>
+      <showCmd>2</showCmd>
+      <MinPosition>
+        <xPos>-32000</xPos>
+        <yPos>-32000</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>-1</xPos>
+        <yPos>-1</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>138</Top>
+        <Left>146</Left>
+        <Right>957</Right>
+        <Bottom>853</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+    <MDIClientArea>
+      <RegID>0</RegID>
+      <MDITabState>
+        <Len>358</Len>
+        <Data>010000000400000001000000010000000100000001000000000000000200000000000000010000000100000000000000280000002800000001000000010000000000000001000000A2443A5C73686978695C646F776E6C6F61645CD6D0BEB0D4B0B5E7D7D3302E39364F4C4544CFD4CABEC6C1D7CAC1CF5C30342DB3CCD0F2D4B4C2EB5CD6D0BEB0D4B0535049BDD3BFDACFD4CABEC6C1C0FDB3CC5C53544D3332C0FDB3CC5C30312DD6D0BEB0D4B0B5E7D7D3302E39364F4C4544CFD4CABEC6C153544D333246313033433854365F535049C0FDB3CC5C48415244574152455C4F4C45445C6F6C65642E6300000000066F6C65642E6300000000C5D4F200FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD5000100000000000000020000001584FFFF4F83FFFF5688FFFF6B85FFFF</Data>
+      </MDITabState>
+    </MDIClientArea>
+    <ViewEx>
+      <ViewType>0</ViewType>
+      <ViewName>Build</ViewName>
+      <Window>
+        <RegID>-1</RegID>
+        <PaneID>-1</PaneID>
+        <IsVisible>0</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>AE0000004F000000F1030000B6000000</Data>
+        </RectRecentDocked>
+        <RectRecentFloat>
+          <Len>16</Len>
+          <Data>A4000000BB0000009C02000022010000</Data>
+        </RectRecentFloat>
+      </Window>
+      <Window>
+        <RegID>1005</RegID>
+        <PaneID>1005</PaneID>
+        <IsVisible>1</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>03000000660000000E01000052020000</Data>
+        </RectRecentDocked>
+        <RectRecentFloat>
+          <Len>16</Len>
+          <Data>70000000870000001A0100001C010000</Data>
+        </RectRecentFloat>
+      </Window>
+      <Window>
+        <RegID>109</RegID>
+        <PaneID>109</PaneID>
+        <IsVisible>1</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>0300000066000000A700000052020000</Data>
+        </RectRecentDocked>
+        <RectRecentFloat>
+          <Len>16</Len>
+          <Data>A4000000BB0000006D01000058020000</Data>
+        </RectRecentFloat>
+      </Window>
+      <Window>
+        <RegID>1465</RegID>
+        <PaneID>1465</PaneID>
+        <IsVisible>0</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>000000008A010000F1030000F1010000</Data>
+        </RectRecentDocked>
+        <RectRecentFloat>
+          <Len>16</Len>
+          <Data>A4000000BB0000009C02000022010000</Data>
+        </RectRecentFloat>
+      </Window>
+      <Window>
+        <RegID>1466</RegID>
+        <PaneID>1466</PaneID>
+        <IsVisible>0</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>030000008D010000EE030000C4010000</Data>
+        </RectRecentDocked>
+        <RectRecentFloat>
+          <Len>16</Len>
+          <Data>A4000000BB0000009C02000022010000</Data>
+        </RectRecentFloat>
+      </Window>
+      <Window>
+        <RegID>1467</RegID>
+        <PaneID>1467</PaneID>
+        <IsVisible>0</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>030000008D010000EE030000C4010000</Data>
+        </RectRecentDocked>
+        <RectRecentFloat>
+          <Len>16</Len>
+          <Data>A4000000BB0000009C02000022010000</Data>
+        </RectRecentFloat>
+      </Window>
+      <Window>
+        <RegID>1468</RegID>
+        <PaneID>1468</PaneID>
+        <IsVisible>0</IsVisible>
+        <IsFloating>0</IsFloating>
+        <IsTabbed>0</IsTabbed>
+        <IsActivated>0</IsActivated>
+        <MRUWidth>32767</MRUWidth>
+        <PinState>0</PinState>
+        <RecentFrameAlignment>4096</RecentFrameAlignment>
+        <RecentRowIndex>0</RecentRowIndex>
+        <RectRecentDocked>
+          <Len>16</Len>
+          <Data>030000008D010000EE030000C4010000</Data>
+        </RectRecentDocked>
+       
